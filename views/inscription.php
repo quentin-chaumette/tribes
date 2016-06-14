@@ -1,15 +1,15 @@
 <?php
-	include 'php/html_head.php';
-	include 'php/header.php';
+	include 'html_head.php';
+	echo "<body>";
+	include 'header.php';
 ?>
-<body>
 <!-- PAGE CONTENT -->
 
 
 	<article class="page_content inscription_phase" id="inscription_user">
 		<h1>Inscription</h1>
 		<h2>Qui êtes vous ?</h2>
-		<form id="user_inscription" action="php/_functions/insert_user.php" method="post">
+		<form id="user_inscription" action="../modules/insert_user.php" method="post">
 			<input type="text" name="firstname" id="firstname" placeholder="Prénom"></input>
 			<input type="text" name="name" id="name" placeholder="Nom"></input>
 			<input type="text" name="local" id="local" placeholder="Localisation"></input>
@@ -24,8 +24,8 @@
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'php/footer.php';
-	include 'php/scripts_calls.php';
+	include 'footer.php';
+	include '../modules/scripts_calls.php';
 ?>
 </body>
 </html>

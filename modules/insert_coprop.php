@@ -16,14 +16,14 @@ if(isset($_POST['add_coprop'])){
 
 		$insertion = mysql_query( "INSERT INTO coprops (title,address,postal_code,city, admin_id	) VALUES ('$title','$address','$postal_code', '$city', '$admin_id') ", $link );
 		if(! $insertion){
-			header ('location: ../../creation_copropriete.php');
+			header ('location: ../views/creation_copropriete.php');
 		}
 		else{
 			$inserted = mysql_query( "SELECT * FROM coprops ORDER BY id DESC LIMIT 1", $link );
 			while ($row = mysql_fetch_assoc($inserted)) {
 				$coprop_id = $row["id"];
 			}
-			header ("location: ../../inviter_copros.php?coprop_id=".$coprop_id."");
+			header ("location: ../views/inviter_copros.php?coprop_id=".$coprop_id."");
 		}
 	}
 }

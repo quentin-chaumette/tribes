@@ -14,7 +14,7 @@ if(isset($_POST['add_request'])){
 		$insertion = mysql_query( "INSERT INTO requests (title,description) VALUES ('$title','$description') ", $link );
 	}
 
-	header ('location: ../../circle.php'); // redirection 
+	header ('location: ../views/dashboard.php'); // redirection 
 			
 	}
 

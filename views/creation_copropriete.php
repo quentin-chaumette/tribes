@@ -1,20 +1,20 @@
 <?php
-	include 'php/html_head.php';
-	include 'php/header.php';
+	include 'html_head.php';
+	echo "<body>";
+	include 'header.php';
 ?>
-<body>
 <!-- PAGE CONTENT -->
 
 
 	<article class="page_content inscription_phase" id="coprop_creation">
 		<h1>Créer une copropriété</h1>
 		<h2>Saisissez les informations suivantes :</h2>
-		<form id="copro_creation" action="php/_functions/insert_coprop.php" method="post">
+		<form id="copro_creation" action="../modules/insert_coprop.php" method="post">
 			<input type="text" name="title" id="title" placeholder="Nom"></input>
 			<input type="text" name="address" id="address" placeholder="Adresse"></input>
 			<input type="text" name="postal_code" id="postal_code" placeholder="Code postal"></input>
 			<input type="text" name="city" id="city" placeholder="Ville"></input>
-			<?php 
+			<?php
 				$user_id=$_GET["user_id"]; 
 				echo " <input class=\"input_hide\" type=\"text\" name=\"user_id\" value=\"".$user_id."\" ></input>"; 
 			?>
@@ -26,8 +26,8 @@
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'php/footer.php';
-	include 'php/scripts_calls.php';
+	include 'footer.php';
+	include 'modules/scripts_calls.php';
 ?>
 </body>
 </html>

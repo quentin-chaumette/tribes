@@ -23,6 +23,7 @@ if(isset($_POST['add_coproprios'])){
 			else{
 				$insertion = mysql_query( "INSERT INTO users (mail) VALUES ('$value') ", $link );
 				// envoi mail
+				// header location dashboard
 			}
 
 		}

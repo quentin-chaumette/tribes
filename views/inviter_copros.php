@@ -1,15 +1,15 @@
 <?php
-	include 'php/html_head.php';
-	include 'php/header.php';
+	include 'html_head.php';
+	echo "<body>";
+	include 'header.php';
 ?>
-<body>
 <!-- PAGE CONTENT -->
 
 
 	<article class="page_content inscription_phase" id="invit_coproprios">
 		<h1>Invitez des copropriétaires ou locataires</h1>
 		<h2>Saisissez les adresses mail :</h2>
-		<form id="coproprios_invitation" action="php/_functions/insert_coproprios.php" method="post">
+		<form id="coproprios_invitation" action="../modules/insert_coproprios.php" method="post">
 			<div class="inputs-mail">
 				<input type="text" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
 				<input type="text" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
@@ -28,8 +28,8 @@
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'php/footer.php';
-	include 'php/scripts_calls.php';
+	include 'footer.php';
+	include '../modules/scripts_calls.php';
 ?>
 </body>
 </html>

@@ -1,8 +1,9 @@
 <?php
 	include 'html_head.php';
+	echo "<body>";
 	include 'header.php';
+
 ?>
-<body>
 <!-- PAGE CONTENT -->
 
 
@@ -13,8 +14,8 @@
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'php/footer.php';
-	include 'php/scripts_calls.php';
+	include 'views/footer.php';
+	include '../modules/scripts_calls.php';
 ?>
 </body>
 </html>
