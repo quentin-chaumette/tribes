@@ -1,0 +1,26 @@
+article#dashboard{
+
+
+	section.circles{
+
+		a.button-add-circle{
+			position: relative;
+			display: block;
+			margin: 20px 0px;
+			text-align: center;
+		}
+
+		div.circle{
+			position: relative;
+			width: 100%;
+			float: left;
+			margin-bottom: 20px;
+
+			img{
+				float: left;
+				width: 100px;
+				height: 70px;
+			}
+		}
+	}
+}
