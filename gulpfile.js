@@ -34,7 +34,7 @@ gulp.task('browser-sync', function () {
 
 
 /* Tasks */
-gulp.task('default', ['sass', 'images', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'browser-sync'], function () {
 	gulp.watch(path.scss + '**/*.scss', ['sass']);
 
 	//gulp.watch("app/**/*.js", ['browserify']);
