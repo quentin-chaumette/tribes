@@ -20,7 +20,7 @@
 				echo " <input class=\"input_hide\" type=\"text\" name=\"coprop_id\" value=\"".$coprop_id."\" ></input>"; 
 			?>
 			<input type="submit" name="add_coproprios" id="add_coproprios" value="Terminer"></input>
-			<a href=""></a>
+			<a href="dashboard.php">Je le ferai plus tard</a>
 		</form>
 
 	</article>

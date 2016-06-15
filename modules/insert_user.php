@@ -14,10 +14,9 @@ if(isset($_POST['add_user'])){
 		$local=$_POST['local'];
 		$mail=$_POST['mail'];
 		$pass=$_POST['pass'];
-		$confirm_pass=$_POST['confirm_pass'];
 
 		if(check_user_exist($link, $mail)){
-			echo "user already exist";
+			//echo "user already exist";
 			// if user exist give back error
 		}		
 		else {

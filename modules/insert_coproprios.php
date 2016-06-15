@@ -5,6 +5,7 @@ include 'send_mail.php';
 
 if(isset($_POST['add_coproprios'])){
 	$mails=$_POST['mail'];
+	$coprop_id=$_POST['coprop_id'];
 	$link=db_connect();
 	if (! $link) {
 		//echo "could not connect";
@@ -16,8 +17,8 @@ if(isset($_POST['add_coproprios'])){
 			}
 			else {
 				if ($mail != "") {
-					$insertion = mysqli_query($link, "INSERT INTO users (mail) VALUES ('$mail') " );
-					send_mail($mail);
+					$insertion = mysqli_query($link, "INSERT INTO users (mail, coprop_id) VALUES ('$mail', '$coprop_id') " );
+					send_mail($mail, $coprop_id);
 				}
 				else{}
 			}

@@ -25,6 +25,7 @@ if(isset($_POST['add_coprop'])){
 				$inserted = mysqli_query($link, "SELECT * FROM coprops ORDER BY id DESC LIMIT 1" );
 				while ($row = mysqli_fetch_assoc($inserted)) {
 					$coprop_id = $row["id"];
+					$update_user_coprop_id = mysqli_query($link, "UPDATE users SET coprop_id='$coprop_id' WHERE id='$admin_id' " );
 				}
 				header ("location: ../views/inviter_copros.php?coprop_id=".$coprop_id."");			
 			}

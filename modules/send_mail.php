@@ -1,6 +1,6 @@
 <?php
 
-function send_mail($mail){
+function send_mail($mail,$coprop_id){
 	
 	$to = "".$mail;
 	// Sujet
@@ -14,7 +14,7 @@ function send_mail($mail){
 	</head>
 	<body>
 		<h1 style="font-weight:bold;">Bienvenue sur Tribes !</h1>
-		<a href="http://www.quentinchaumette.fr/tribes/views/rejoindre.php?user_mail=a@a.com&coprop_id=1">Rejoindre Tribes</a>
+		<a href="http://www.quentinchaumette.fr/tribes/views/rejoindre.php?user_mail='.$mail.'&coprop_id='.$coprop_id.'">Rejoindre Tribes</a>
 	</body>
 	</html>
 	';
@@ -25,7 +25,7 @@ function send_mail($mail){
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 	// En-têtes additionnels
-	//$headers .= 'To: You <quentin.chaumette.pro@gmail.com>' . "\r\n";
+	//$headers .= 'To: You <quentin.chaumette@hetic.net>' . "\r\n";
 	$headers .= 'From: Tribes <hello@tribes.com>' . "\r\n";
 
 	// Envoi
