@@ -3,6 +3,6 @@
 <script type="text/javascript" src="../assets/js/model.js"></script>
 <script type="text/javascript" src="../assets/js/control.js"></script>
 <script type="text/javascript" src="../assets/js/app.js"></script>
-<!-- 
-<script> ANALYTICS </script> 
+<!--
+<script> ANALYTICS </script>
  -->

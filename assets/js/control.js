@@ -16,7 +16,7 @@ var control = {
 	 */
 	event_listener_init: function () {
 		var self = this;
-		
+
 		self.$document.on('click', '.add_mail_field', function (e) {
 			var mi = document.createElement("input");
 			mi.setAttribute('type', 'text');
@@ -24,7 +24,7 @@ var control = {
 			mi.setAttribute('class', 'mail');
 			mi.setAttribute('placeholder', 'exemple@gmail.com');
 			$('.inputs-mail').append(mi);
-		});		
+		});
 	}
 
 }

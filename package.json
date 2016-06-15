@@ -1,33 +1,33 @@
 {
-	"name": "Tribes",
-	"version": "1.0.0",
-	"description": "",
-	"main": "",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"underscore": "~1.6.0",
-		"handlebars": "~1.3.0",
-		"jquery-untouched": ""
-	},
-	"devDependencies": {
-		"browser-sync": "^2.8.2",
-		"browserify": "",
-		"gulp": "^3.9.0",
-		"gulp-autoprefixer": "",
-		"gulp-load-plugins": "",
-		"gulp-sass": "",
-		"hbsfy": "~1.3.2",
-		"node-gitlab": "^1.1.0",
-		"normalize": "^0.3.1",
-		"vinyl-source-stream": ""
-	},
-	"browserify": {
-		"transform": [
-			"hbsfy"
-		]
-	}
+  "name": "Tribes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "handlebars": "~1.3.0",
+    "jquery-untouched": ""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "browserify": "",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "",
+    "gulp-load-plugins": "",
+    "gulp-sass": "",
+    "hbsfy": "~1.3.2",
+    "node-gitlab": "^1.1.0",
+    "normalize": "^0.3.1",
+    "vinyl-source-stream": ""
+  },
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
+  }
 }

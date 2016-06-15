@@ -10,8 +10,9 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-// var browserify = require('browserify');
+var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function () {
 	gulp.src(path.scss + '*.scss')
@@ -33,16 +34,22 @@ gulp.task('browser-sync', function () {
 	});
 });
 
-gulp.task('js', function () {
-	return browserify('./src/app.js')
-		.bundle()
-		.pipe(source('bundle.js'))
-		.pipe(gulp.dest(path.js));
+// gulp.task('js', function () {
+// 	return browserify('./src/js/app.js')
+// 		.bundle()
+// 		.pipe(source('bundle.js'))
+// 		.pipe(gulp.dest(path.js));
+// });
+
+gulp.task('images', function(){
+    return gulp.src('./src/images/**')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./assets/img/'));
 });
 
 
 /* Tasks */
-gulp.task('default', ['sass', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'images', 'browser-sync'], function () {
 	gulp.watch(path.scss + '**/*.scss', ['sass']);
 
 	//gulp.watch("app/**/*.js", ['browserify']);
