@@ -4,6 +4,11 @@ header {
 	width: 100vw;
 	background-color: white;
 	z-index: 10;
+	-moz-box-shadow: 0px 0px 25px -5px $grey_iron;
+	-webkit-box-shadow: 0px 0px 25px -5px $grey_iron;
+	-o-box-shadow: 0px 0px 25px -5px $grey_iron;
+	box-shadow: 0px 0px 25px -5px $grey_iron;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey_iron, Direction=NaN, Strength=25);
 
 	ul {
 		li {
@@ -19,6 +24,9 @@ header {
 			i {
 				padding-right: 10px;
 			}
+		}
+		&:first-child {
+			padding: 20px 80px 20px 130px;
 		}
 		// user button profil
 		&:nth-child(2) {
@@ -55,5 +63,8 @@ header {
 		font-size: 1.6rem;
 		padding: 29px;
 		background-color: $blue_havelock;
+		&:hover {
+			background-color: $blue_mariner;
+		}
 	}
 }

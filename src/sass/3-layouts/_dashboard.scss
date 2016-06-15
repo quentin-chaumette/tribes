@@ -1,0 +1,25 @@
+#dashboard {
+	nav.nav-sort {
+		text-align: center;
+		ul {
+			li {
+				display: inline-block;
+				padding: 0 15px;
+				a {
+					color: $grey_silver_chalice;
+					font-size: 1.1rem;
+					text-transform: uppercase;
+					display: block;
+					&.active {
+						color: $black_abbey;
+						padding-bottom: 5px;
+						border-bottom: 4px solid $blue_havelock;
+					}
+					&:hover {
+						color: $black_abbey;
+					}
+				}
+			}
+		}
+	}
+}

@@ -9,13 +9,13 @@ body, html{
 	background-color: $grey_alabaster;
 }
 
-.active {
+.nav .active {
 	background-color: $blue_mariner;
 }
 
 .container {
 	width: 100%;
-	padding: 20px 80px 20px 130px;
+	padding: 140px 20px 20px 120px;
 }
 
 ::-webkit-scrollbar-track{

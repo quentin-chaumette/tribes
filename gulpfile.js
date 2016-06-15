@@ -1,7 +1,7 @@
 /* Configuration */
 var path = {
 	css: "assets/css/",
-	scss: "assets/sass/",
+	scss: "src/sass/",
 	js: "assets/js/"
 }
 
@@ -32,14 +32,14 @@ gulp.task('browser-sync', function () {
 		proxy: "localhost/tribes"
 	});
 });
-/*
-gulp.task('browserify', function () {
-	return browserify('./app/main.js')
+
+gulp.task('js', function () {
+	return browserify('./src/app.js')
 		.bundle()
 		.pipe(source('bundle.js'))
 		.pipe(gulp.dest(path.js));
 });
-*/
+
 
 /* Tasks */
 gulp.task('default', ['sass', 'browser-sync'], function () {

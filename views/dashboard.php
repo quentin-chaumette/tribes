@@ -8,14 +8,23 @@
 <!-- PAGE CONTENT -->
 
 
-	<article class="page_content" id="dashboard">
-		<h1>Dashboard</h1>
-		<h2>Requêtes</h2>
+	<div class="container" id="dashboard">
+
+		<nav class="nav-sort">
+			<ul>
+				<li><a href="#" class="title active">Tout voir</a></li>
+				<li><a href="#" class="title">Non traitées</a></li>
+				<li><a href="#" class="title">En cours</a></li>
+				<li><a href="#" class="title">Terminées</a></li>
+				<li><a href="#" class="title">Refusées</a></li>
+			</ul>
+		</nav>
+
 		<section class="requests">
 
 		</section>
 
-	</article>
+	</div>
 
 
 <!-- END PAGE CONTENT -->
