@@ -4,11 +4,13 @@
 @-webkit-keyframes indexAppear {
   0%, 15% {
     opacity: 0; }
+
   100% {
     opacity: 1; } }
 @keyframes indexAppear {
   0%, 15% {
     opacity: 0; }
+
   100% {
     opacity: 1; } }
 
@@ -17,18 +19,22 @@
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
     opacity: 1; }
+
   60% {
     -webkit-transform: translate(-50%, -50%) scale(3);
             transform: translate(-50%, -50%) scale(3);
     opacity: 0; }
+
   60.1% {
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
     opacity: 0; }
+
   60.2% {
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
     opacity: 1; }
+
   100% {
     -webkit-transform: translate(-50%, -50%) scale(3);
             transform: translate(-50%, -50%) scale(3);
@@ -39,18 +45,22 @@
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
     opacity: 1; }
+
   60% {
     -webkit-transform: translate(-50%, -50%) scale(3);
             transform: translate(-50%, -50%) scale(3);
     opacity: 0; }
+
   60.1% {
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
     opacity: 0; }
+
   60.2% {
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
     opacity: 1; }
+
   100% {
     -webkit-transform: translate(-50%, -50%) scale(3);
             transform: translate(-50%, -50%) scale(3);
@@ -61,14 +71,17 @@
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
     opacity: 1; }
+
   25% {
     -webkit-transform: scale(1.9);
             transform: scale(1.9);
     opacity: 1; }
+
   50% {
     -webkit-transform: scale(2.4);
             transform: scale(2.4);
     opacity: 0; }
+
   100% {
     -webkit-transform: scale(2.4);
             transform: scale(2.4);
@@ -79,14 +92,17 @@
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
     opacity: 1; }
+
   25% {
     -webkit-transform: scale(1.9);
             transform: scale(1.9);
     opacity: 1; }
+
   50% {
     -webkit-transform: scale(2.4);
             transform: scale(2.4);
     opacity: 0; }
+
   100% {
     -webkit-transform: scale(2.4);
             transform: scale(2.4);
@@ -96,15 +112,19 @@
   0% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
   30% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
   50% {
     -webkit-transform: scale(0.95);
             transform: scale(0.95); }
+
   70% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
   100% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); } }
@@ -113,15 +133,19 @@
   0% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
   30% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
   50% {
     -webkit-transform: scale(0.95);
             transform: scale(0.95); }
+
   70% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
   100% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); } }
@@ -129,12 +153,14 @@
 @-webkit-keyframes bounceRight {
   0%, 100% {
     right: 18px; }
+
   50% {
     right: 12px; } }
 
 @keyframes bounceRight {
   0%, 100% {
     right: 18px; }
+
   50% {
     right: 12px; } }
 
@@ -204,22 +230,22 @@ span, img {
    ========================================================================== */
 @font-face {
   font-family: 'Avenir';
-  src: url("../fonts/Avenir-Regular.eot");
-  src: url("../fonts/Avenir-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Regular.woff") format("woff"), url("../fonts/Avenir-Regular.ttf") format("truetype"), url("../fonts/Avenir-Regular.svg#Avenir-Regular") format("svg");
+  src: url('../fonts/Avenir-Regular.eot');
+  src: url('../fonts/Avenir-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir-Regular.woff') format('woff'), url('../fonts/Avenir-Regular.ttf') format('truetype'), url('../fonts/Avenir-Regular.svg#Avenir-Regular') format('svg');
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Avenir';
-  src: url("../fonts/Avenir-Medium.eot");
-  src: url("../fonts/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Medium.woff") format("woff"), url("../fonts/Avenir-Medium.ttf") format("truetype"), url("../fonts/Avenir-Medium.svg#Avenir-Medium") format("svg");
+  src: url('../fonts/Avenir-Medium.eot');
+  src: url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir-Medium.woff') format('woff'), url('../fonts/Avenir-Medium.ttf') format('truetype'), url('../fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Avenir';
-  src: url("../fonts/Avenir-Black.eot");
-  src: url("../fonts/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Black.woff") format("woff"), url("../fonts/Avenir-Black.ttf") format("truetype"), url("../fonts/Avenir-Black.svg#AvenirLTStd-Black") format("svg");
+  src: url('../fonts/Avenir-Black.eot');
+  src: url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir-Black.woff') format('woff'), url('../fonts/Avenir-Black.ttf') format('truetype'), url('../fonts/Avenir-Black.svg#AvenirLTStd-Black') format('svg');
   font-weight: 900;
   font-style: normal; }
 
@@ -443,7 +469,6 @@ article#dashboard section.circles a.button-add-circle {
   display: block;
   margin: 20px 0px;
   text-align: center; }
-
 article#dashboard section.circles div.circle {
   position: relative;
   width: 100%;
@@ -459,13 +484,11 @@ article#circle h1 {
   font: 22px/30px 'MSB', sans-serif;
   text-transform: uppercase;
   color: #6D6D6D; }
-
 article#circle section.requests a.button-add-request {
   position: relative;
   display: block;
   margin: 20px 0px;
   text-align: center; }
-
 article#circle section.requests div.request {
   position: relative;
   width: 100%;

@@ -20,12 +20,17 @@ if(isset($_POST['add_coprop'])){
 			// if coprop exist give back error
 		}	
 		else{
-			$insertion = mysqli_query($link, "INSERT INTO coprops (title,address,postal_code,city, admin_id) VALUES ('$title','$address','$postal_code', '$city', '$admin_id') " );
-			$inserted = mysqli_query($link, "SELECT * FROM coprops ORDER BY id DESC LIMIT 1" );
-			while ($row = mysqli_fetch_assoc($inserted)) {
-				$coprop_id = $row["id"];
+			if ($title != "") {
+				$insertion = mysqli_query($link, "INSERT INTO coprops (title, address, postal_code, city, admin_id) VALUES ('$title','$address','$postal_code', '$city', '$admin_id') " );
+				$inserted = mysqli_query($link, "SELECT * FROM coprops ORDER BY id DESC LIMIT 1" );
+				while ($row = mysqli_fetch_assoc($inserted)) {
+					$coprop_id = $row["id"];
+				}
+				header ("location: ../views/inviter_copros.php?coprop_id=".$coprop_id."");			
 			}
-			header ("location: ../views/inviter_copros.php?coprop_id=".$coprop_id."");
+			else{
+
+			}			
 		}
 	}
 }
