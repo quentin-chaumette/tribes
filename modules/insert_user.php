@@ -26,7 +26,7 @@ if(isset($_POST['add_user'])){
 			while ($row = mysqli_fetch_assoc($inserted)) {
 				$user_id = $row["id"];
 			}
-			header ("location: ../views/creation_copropriete.php?user_id=".$user_id."");				
+			header ("location: ../views/creation_copropriete.php?user_id=".$user_id."");	
 		}
 	}	
 }

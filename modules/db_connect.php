@@ -26,6 +26,7 @@ function db_connect(){
 		die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
 	}
 	else{
+		mysqli_set_charset($link,"utf8");
 		return $link;
 	}
 }

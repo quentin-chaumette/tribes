@@ -30,10 +30,10 @@ function send_mail($mail){
 
 	// Envoi
 	if (mail($to, $subject, $message, $headers)){
-		echo "envoyé";
+		//mail envoyé
 	}
 	else{
-		echo "pas envoyé";
+		// error
 	}
 	
 }

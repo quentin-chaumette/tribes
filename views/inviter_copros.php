@@ -1,8 +1,7 @@
-<?php
-	include 'html_head.php';
-	echo "<body>";
-	include 'header.php';
-?>
+<?php	include 'html_head.php'; ?>
+<body>
+<?php	include 'header.php';?>
+
 <!-- PAGE CONTENT -->
 
 
@@ -11,9 +10,9 @@
 		<h2>Saisissez les adresses mail :</h2>
 		<form id="coproprios_invitation" action="../modules/insert_coproprios.php" method="post">
 			<div class="inputs-mail">
-				<input type="text" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
-				<input type="text" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
-				<input type="text" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
+				<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
+				<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
+				<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
 			</div>
 			<span class="add_mail_field">+</span>
 			<?php 
@@ -21,6 +20,7 @@
 				echo " <input class=\"input_hide\" type=\"text\" name=\"coprop_id\" value=\"".$coprop_id."\" ></input>"; 
 			?>
 			<input type="submit" name="add_coproprios" id="add_coproprios" value="Terminer"></input>
+			<a href=""></a>
 		</form>
 
 	</article>

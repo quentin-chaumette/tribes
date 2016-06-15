@@ -13,7 +13,7 @@ if(isset($_POST['add_coproprios'])){
 		foreach ($mails as $key => $mail) {
 			if(check_user_exist($link, $mail)){
 				// if user exist do nothing
-			}		
+			}
 			else {
 				if ($mail != "") {
 					$insertion = mysqli_query($link, "INSERT INTO users (mail) VALUES ('$mail') " );
@@ -23,9 +23,9 @@ if(isset($_POST['add_coproprios'])){
 			}
 		}
 	}
-	//header("location: ../views/dashboard.php");
+	header("location: ../views/dashboard.php");
 }
 else{
-	//header("location: ../views/dashboard.php");
+	header("location: ../views/dashboard.php");
 }
 ?>
