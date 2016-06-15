@@ -1,3 +1,28 @@
-@import "1-main/mainDir";
-@import "2-modules/modulesDir";
-@import "3-layouts/layoutsDir";
+/* MODULES
+   ========================================================================== */
+@import "2-modules/animations";
+@import "2-modules/mixins";
+@import "2-modules/images";
+
+
+/* MAIN
+   ========================================================================== */
+@import "1-main/reset";
+@import "1-main/mainFonts";
+@import "1-main/colors";
+@import "1-main/typography";
+@import "1-main/loader";
+@import "1-main/404";
+
+
+/* LAYOUTS
+   ========================================================================== */
+@import "3-layouts/common";
+@import "3-layouts/header";
+@import "3-layouts/navbar";
+@import "3-layouts/home";
+@import "3-layouts/inscription";
+@import "3-layouts/dashboard";
+@import "3-layouts/circle";
+@import "3-layouts/footer";
+

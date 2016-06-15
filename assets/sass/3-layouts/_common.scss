@@ -1,9 +1,21 @@
 body, html{
-	font-family: 'LR';
+	font-family: $avenir;
+	font-weight: normal;
+	font-style: normal;
 	font-size: 14px;
-	background-color: $white_gold_light;
-	width: 100vw;	
+	width: 100vw;
 	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	background-color: $grey_alabaster;
+}
+
+.active {
+	background-color: $blue_mariner;
+}
+
+.container {
+	width: 100%;
+	padding: 20px 80px 20px 130px;
 }
 
 ::-webkit-scrollbar-track{

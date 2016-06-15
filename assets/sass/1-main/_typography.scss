@@ -1,0 +1,24 @@
+// Variables
+$avenir : "Avenir", sans-serif;
+
+.title {
+  font-family: $avenir;
+  font-weight: bold;
+  font-style: normal;
+  color: $black_abbey;
+}
+
+.item-subtitle {
+  font-family: $avenir;
+  font-weight: normal;
+  font-style: normal;
+  color: $blue_havelock;
+}
+
+
+.header-content {
+  @include content;
+  font-size: 0.9rem;
+  color: $grey_iron;
+  letter-spacing: 0.1px;
+}

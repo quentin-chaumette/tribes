@@ -1,0 +1,42 @@
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100px;
+  height: 100vh;
+  background-color: $blue_havelock;
+
+  ul {
+    font-weight: 500;
+    padding-top: 150px;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    li {
+      i {
+        padding-bottom: 10px;
+      }
+      a {
+        color: white;
+        display: block;
+        padding: 15px 0;
+      }
+      .fa-home, .fa-lightbulb-o,.fa-cogs {
+        font-size: 2rem;
+      }
+      .fa-sign-out {
+        font-size: 1.5rem;
+      }
+      &:hover {
+        background-color: $blue_mariner;
+      }
+      &:last-child {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        a {
+          padding: 15px 12.5px;
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@
 	include 'html_head.php';
 	echo "<body>";
 	include 'header.php';
+	include 'left_navbar.php';
 	include '../modules/get_requests.php';
 ?>
 <!-- PAGE CONTENT -->
