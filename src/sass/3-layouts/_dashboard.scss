@@ -61,8 +61,6 @@
 								margin-right: 10px;
 								border-radius: 50%;
 								display: inline-block;
-								// à suppr
-								background-color: $red_cinnabar;
 							}
 						}
 						&:nth-child(2) {
@@ -138,8 +136,6 @@
 						padding: 0 10px;
 						width: 30%;
 						text-align: center;
-						// à suppr
-						background-color: white_alabaster;
 						> div {
 							width: 100%;
 							margin: auto;
@@ -149,8 +145,6 @@
 								font-weight: 500;
 								display: block;
 								text-decoration: underline;
-								// à suppr
-								color: $blue_havelock;
 							}
 						}
 						p.item-subtitle {
@@ -198,12 +192,5 @@
 				}
 			}
 		}
-	}
-}
-
-button {
-	background-color: $red_carnation;
-	&:hover {
-		background-color: $red_cinnabar;
 	}
 }

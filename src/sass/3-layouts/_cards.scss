@@ -1,0 +1,25 @@
+&.toDo {
+  > div {
+    > div {
+      > span {
+        &.state::before {
+          background-color: $red_cinnabar;
+        }
+      }
+      &:last-child {
+        background-color: $white_alabaster;
+        > div {
+          a {
+            color: $blue_havelock;
+          }
+        }
+      }
+    }
+  }
+  button {
+    background-color: $red_carnation;
+    &:hover {
+      background-color: $red_cinnabar;
+    }
+  }
+}

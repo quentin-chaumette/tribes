@@ -22,8 +22,8 @@
 
 		<section class="requests content-container">
 
-			<!-- CARD : ADMIN que quelqu'un a posté, qui n'est pas encore prise "A faire" -->
-			<div class="card">
+			<!-- CARD : ADMIN que quelqu'un a posté, qui n'est pas encore prise "A faire" ADD CLASS = toDO-->
+			<div class="card toDo">
 				<div class="card-wrapper">
 					<!-- LEFT -->
 					<div>
