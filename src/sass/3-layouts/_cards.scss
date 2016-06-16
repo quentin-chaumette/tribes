@@ -61,3 +61,36 @@
     }
   }
 }
+
+
+&.doing {
+  > div {
+    > div {
+      > span {
+        &.state::before {
+          background-color: $blue_havelock;
+        }
+      }
+      &:last-child {
+        background-color: $blue_havelock;
+        p {
+          color: white;
+        }
+        .user-img {
+          display: inline;
+          border: 1px solid white;
+        }
+        h5 {
+          padding-top: 5px;
+          color: white;
+        }
+      }
+    }
+  }
+  button {
+    background-color: $red_carnation;
+    &:hover {
+      background-color: $red_cinnabar;
+    }
+  }
+}
