@@ -91,6 +91,7 @@
 						width: 70%;
 						// Title card
 						h4.content {
+							font-size: 0.9rem;
 							text-align: center;
 							color: $black_abbey;
 						}
@@ -156,6 +157,9 @@
 							font-size: 0.8rem;
 							font-style: italic;
 						}
+						h5 {
+							font-size: 0.8rem;
+						}
 					}
 				}
 			}
@@ -192,5 +196,17 @@
 				}
 			}
 		}
+	}
+}
+
+
+
+button.add-card {
+	text-transform: uppercase;
+	background-color: $blue_havelock;
+	border-bottom: 3px solid $blue_mariner;
+	margin: 0 10px;
+	&:hover {
+		background-color: $blue_mariner;
 	}
 }
