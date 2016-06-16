@@ -62,7 +62,6 @@
   }
 }
 
-
 &.doing {
   > div {
     > div {
@@ -91,6 +90,35 @@
     background-color: $red_carnation;
     &:hover {
       background-color: $red_cinnabar;
+    }
+  }
+}
+
+
+&.done {
+  > div {
+    > div {
+      background-color: rgba($grey_bluewood, 0.15);
+      > span {
+        &.state::before {
+          background-color: rgba($grey_bluewood, 0.4);
+        }
+      }
+      &:last-child {
+        background-color: rgba($grey_bluewood, 0.4);
+        color: white;
+        i {
+          font-size: 2rem;
+          padding-bottom: 5px;
+        }
+        p {
+          color: white;
+        }
+        h5 {
+          padding-top: 5px;
+          color: white;
+        }
+      }
     }
   }
 }

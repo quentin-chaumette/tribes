@@ -7,7 +7,7 @@
 ?>
 <!-- PAGE CONTENT -->
 
-
+<!-- <div class="overlay"> -->
 	<div class="container" id="dashboard">
 
 		<nav class="nav-sort">
@@ -54,7 +54,7 @@
 					</div>
 				</div>
 			</div><!--
-			--><!-- CARD : que l'admin user a choisi de faire "À faire", ADD CLASS = toDo--><div class="card toDo">
+			--><!-- CARD : que l'ADMIN a choisi de faire "À faire", ADD CLASS = toDo--><div class="card toDo">
 				<div class="card-wrapper">
 					<!-- LEFT -->
 					<div>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 			</div><!--
-			--><!-- CARD : qu'un user a choisi de faire "En cours", ADD CLASS = doing
+			--><!-- CARD : ADMIN a choisi de faire "En cours", ADD CLASS = doing
 			--><div class="card doing">
 				<div class="card-wrapper">
 					<!-- LEFT -->
@@ -117,12 +117,12 @@
 				</div>
 			</div><!--
 			--><!--
-			--><!-- CARD : qu'un user a choisi de faire "En cours", ADD CLASS = doing
-			--><div class="card doing">
+			--><!-- CARD : qu'un user fait "Résolue", ADD CLASS = done
+			--><div class="card done">
 				<div class="card-wrapper">
 					<!-- LEFT -->
 					<div>
-						<span class="state">En cours</span>
+						<span class="state">Résolue !</span>
 						<span>il y a 2 jours</span>
 						<span class="more"> Voir plus</span>
 						<span class="less">Voir moins</span>
@@ -140,7 +140,7 @@
 					--><div>
 						<div>
 							<p class="item-subtitle">Ne laissons pas le Syndic nous facturer 5 fois plus cher !</p>
-							<img class="user-img" src="http://lorempixel.com/200/200/cats" alt="">
+							<i class="fa fa-check-circle" aria-hidden="true"></i>
 							<h5 class="title">Jean-Paul-Eude</h5>
 						</div>
 					</div>
@@ -152,12 +152,13 @@
 
 		</section>
 
+<!-- </div> -->
+
 	</div>
 
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'footer.php';
 	include '../modules/scripts_calls.php';
 ?>
 </body>

@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="67px" height="40px" viewBox="0 0 67 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="117px" height="77px" viewBox="0 0 117 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
-    <title>logo</title>
+    <title>Calque_1</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(-16.000000, -20.000000)">
-            <g id="Group-2">
-                <g id="logo" transform="translate(16.000000, 20.000000)">
-                    <text id="Tribes" font-family="AvenirNext-Bold, Avenir Next" font-size="14.338702" font-weight="bold" letter-spacing="-0.126035601">
-                        <tspan x="26.0893265" y="31.0364842" fill="#4C4F51">Tr</tspan>
-                        <tspan x="38.555684" y="31.0364842" fill="#F26455">i</tspan>
-                        <tspan x="42.6739042" y="31.0364842" fill="#4C4F51">bes</tspan>
+        <g id="Desktop-HD" transform="translate(-173.000000, -95.000000)">
+            <g id="LOGO" transform="translate(173.000000, 95.000000)">
+                <g id="Calque_1">
+                    <text id="Tribes" fill="#4C4F51" font-family="AvenirNext-Bold, Avenir Next" font-size="22.8398962" font-weight="bold">
+                        <tspan x="50.9110131" y="54.326">Tribes</tspan>
                     </text>
-                    <g id="Group-14" transform="translate(0.000000, 0.430811)">
-                        <path d="M12.653951,29.9210245 L12.5408082,13.5187313 L29.8321347,2.8969099 C29.8321347,2.8969099 22.5519306,-2.74259146 12.0976653,2.44267159 C4.94474694,10.6053407 0.946359184,14.8126635 0.946359184,14.8126635 L0.0216857143,39.4988468 L12.653951,29.9210245 Z" id="Fill-2" fill="#4A90E2"></path>
-                        <polygon id="Fill-4" fill="#4C4F51" points="21.076898 36.0489512 23.8569796 33.5053529 24.0233265 26.116319 21.3415714 24.0010803 18.5507143 26.1149569 18.4422857 33.711701"></polygon>
-                        <path d="M14.1181408,28.3213838 L14.0608959,14.1596363 L30.9548755,4.03155224 C30.9548755,4.03155224 36.1931204,5.83760919 38.4398143,15.0136316 L24.1683245,17.6784509 L21.7761612,17.6927522 L21.4124878,21.6978129 L14.1181408,28.3213838 Z" id="Fill-6" fill="#D9DADB"></path>
-                        <path d="M21.0263878,18.7791786 C22.0143673,19.1877887 23.1424286,18.7103959 23.5471837,17.712025 C23.9519388,16.7136542 23.4798367,15.5722698 22.4925306,15.1636596 C21.504551,14.7543684 20.3764898,15.2317613 19.9717347,16.2301321 C19.5669796,17.228503 20.0390816,18.3698874 21.0263878,18.7791786 Z" id="Fill-8" fill="#4C4F51"></path>
-                        <path d="M0.19975102,33.9965704 L12.9956694,24.4623331" id="Stroke-10" stroke="#FFFFFF"></path>
-                        <path d="M0.424218367,26.9593499 L12.7709327,18.5603678" id="Stroke-12" stroke="#FFFFFF"></path>
-                    </g>
+                    <path d="M24.6897541,57.722 L24.4698197,25.876 L58.1652541,5.253 C58.1652541,5.253 43.9773689,-5.696 23.6048852,4.372 C9.66654098,20.218 1.87472951,28.388 1.87472951,28.388 L0.0719016393,76.318 L24.6897541,57.722 L24.6897541,57.722 Z" id="Shape" fill="#4A90E2"></path>
+                    <polygon id="Shape" fill="#4C4F51" points="41.103418 69.619 46.521418 64.681 46.8449754 50.335 41.619418 46.227 36.1813279 50.331 35.9698525 65.082"></polygon>
+                    <path d="M27.5425574,54.616 L27.4304754,27.12 L60.3529672,7.456 C60.3529672,7.456 70.5608852,10.963 74.9384262,28.778 L47.1272951,33.952 L42.466377,33.979 L41.756877,41.755 L27.5425574,54.616 L27.5425574,54.616 Z" id="Shape" fill="#D9DADB"></path>
+                    <path d="M38.949541,31.14 C38.1607377,33.078 39.0817131,35.294 41.005082,36.089 C42.9295082,36.884 45.1277951,35.956 45.9165984,34.018 C46.7054016,32.08 45.7844262,29.864 43.8610574,29.069 C41.9376885,28.274 39.7383443,29.201 38.949541,31.14 L38.949541,31.14 Z" id="Shape" fill="#4C4F51"></path>
+                    <path d="M0.419778689,65.634 L25.3559016,47.123" id="Shape" stroke="#FFFFFF"></path>
+                    <path d="M0.857532787,51.971 L24.9181475,35.664" id="Shape" stroke="#FFFFFF"></path>
                 </g>
             </g>
         </g>

@@ -30,7 +30,7 @@ var control = {
 		$('#mail-user-inscription').on('focusout', function (e) {
 			var this_input=$(this);
 			var user_mail=this.value;
-			self.check_user_exist(user_mail, function(user_exist){	
+			self.check_user_exist(user_mail, function(user_exist){
 				if(user_exist){
 					this_input.removeClass("valid");
 					this_input.addClass("invalid");
@@ -50,7 +50,7 @@ var control = {
 		$('#coprop-title-inscription').on('focusout', function (e) {
 			var this_input=$(this);
 			var coprop_title=this.value;
-			
+
 			self.check_coprop_exist(coprop_title, function(coprop_exist){
 				console.log("coprop_exist = ", coprop_exist);
 				if(coprop_exist){
@@ -78,7 +78,7 @@ var control = {
 					input.addClass("invalid");
 					$('.msg-error-match-passw').html("Les mots de passe ne concordent pas.");
 					$('input[type=submit]').prop('disabled', true);
-				}				
+				}
 				else if($('#pass').val() == input.val()){
 					input.removeClass("invalid");
 					input.addClass("valid");
@@ -97,6 +97,11 @@ var control = {
 
 		$('.less').on('click', function (e) {
 			self.foldUpCard.apply(this, e)
+		})
+
+		// Show modal
+		$('.add-card').on('click', function (e) {
+			self.showModal.apply(this, e)
 		})
 	},
 
@@ -134,5 +139,9 @@ var control = {
 
 	foldUpCard: function (e) {
 		$(this).parents('.card')[0].classList.remove('expanded');
+	},
+
+	showModal: function(e) {
+		$('#dashboard').toggleClass('overlay');
 	}
 }
