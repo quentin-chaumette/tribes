@@ -13,7 +13,8 @@
 		<h1>Créer une copropriété</h1>
 		<h2>Saisissez les informations suivantes :</h2>
 		<form id="copro_creation" action="../modules/insert_coprop.php" method="post">
-			<input type="text" name="title" id="title" placeholder="Nom" required="required"></input>
+			<input type="text" name="title" id="coprop-title-inscription" placeholder="Nom" required="required"></input>
+			<p class="msg-error-coprop-exist"></p>
 			<input type="text" name="address" id="address" placeholder="Adresse" required="required"></input>
 			<input type="text" name="postal_code" id="postal_code" placeholder="Code postal" required="required"></input>
 			<input type="text" name="city" id="city" placeholder="Ville" required="required"></input>
@@ -23,7 +24,6 @@
 			?>
 			<input type="submit" name="add_coprop" id="add_coprop" value="Suivant"></input>
 		</form>
-
 	</article>
 
 

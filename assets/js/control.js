@@ -30,7 +30,7 @@ var control = {
 		$('#mail-user-inscription').on('focusout', function (e) {
 			var this_input=$(this);
 			var user_mail=this.value;
-			self.check_user_exist(user_mail, function(user_exist){			
+			self.check_user_exist(user_mail, function(user_exist){	
 				if(user_exist){
 					this_input.removeClass("valid");
 					this_input.addClass("invalid");
@@ -42,25 +42,53 @@ var control = {
 					this_input.addClass("valid");
 					$('.msg-error-user-exist').html("");
 					$('input[type=submit]').prop('disabled', false);
-				}				
+				}
+			});
+		})
+
+		// Inscription Coprop : check if title coprop already exist
+		$('#coprop-title-inscription').on('focusout', function (e) {
+			var this_input=$(this);
+			var coprop_title=this.value;
+			
+			self.check_coprop_exist(coprop_title, function(coprop_exist){
+				console.log("coprop_exist = ", coprop_exist);
+				if(coprop_exist){
+
+					this_input.removeClass("valid");
+					this_input.addClass("invalid");
+					$('.msg-error-coprop-exist').html("Cette copropriété existe déjà.");
+					$('input[type=submit]').prop('disabled', true);
+				}
+				else{
+					this_input.removeClass("invalid");
+					this_input.addClass("valid");
+					$('.msg-error-coprop-exist').html("");
+					$('input[type=submit]').prop('disabled', false);
+				}
 			});
 		})
 
 		// Inputs : check if confirm_mdp = mdp
-		$('#confirm_pass').on('focusout', function (e) {
-			if($('#pass').val() != this.value){
-				$(this).removeClass("valid");
-				$(this).addClass("invalid");
-				$('.msg-error-match-passw').html("Les mots de passe ne concordent pas.");
-				$('input[type=submit]').prop('disabled', true);
-			}
-			else if($('#pass').val() == this.value){
-				$(this).removeClass("invalid");
-				$(this).addClass("valid");
-				$('.msg-error-match-passw').html("");
-				$('input[type=submit]').prop('disabled', false);
-			}
+		$('#confirm_pass').on('keyup', function (e) {
+			var input = $(this);
+			setTimeout(function(){
+				if($('#pass').val() != input.val()){
+					input.removeClass("valid");
+					input.addClass("invalid");
+					$('.msg-error-match-passw').html("Les mots de passe ne concordent pas.");
+					$('input[type=submit]').prop('disabled', true);
+				}				
+				else if($('#pass').val() == input.val()){
+					input.removeClass("invalid");
+					input.addClass("valid");
+					$('.msg-error-match-passw').html("");
+					$('input[type=submit]').prop('disabled', false);
+				}
+			},500);
 		})
+
+
 
 		// Expand card
 		$('.more').on('click', function (e) {
@@ -75,7 +103,6 @@ var control = {
 	check_user_exist: function (user_mail, callback) {
 		var user_exist = false;
 		model.async('GET', '../modules/async_check_user_exist.php?user_mail='+user_mail, '', function(xhr){
-			
 			if(xhr.response == "exist"){
 				user_exist = true;
 				callback.call(this, user_exist);
@@ -85,7 +112,20 @@ var control = {
 				callback.call(this, user_exist);
 			}
 		});
-		
+	},
+
+	check_coprop_exist: function (coprop_title, callback) {
+		var coprop_exist = false;
+		model.async('GET', '../modules/async_check_coprop_exist.php?coprop_title='+coprop_title, '', function(xhr){
+			if(xhr.response == "exist"){
+				coprop_exist = true;
+				callback.call(this, coprop_exist);
+			}
+			else if(xhr.response == "noexist"){
+				coprop_exist=false;
+				callback.call(this, coprop_exist);
+			}
+		});
 	},
 
 	expandCard: function (e) {
