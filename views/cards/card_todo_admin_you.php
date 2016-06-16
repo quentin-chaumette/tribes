@@ -1,11 +1,10 @@
 <!--
---><!-- CARD : ADMIN que quelqu'un a posté, qui n'est pas encore prise "À prendre" ADD CLASS = toTake-->
-<div class="card toTake">
+--><!-- CARD : ADMIN que quelqu'un a posté, qui n'est pas encore prise "À prendre" ADD CLASS = toTake--><div class="card toTake">
 	<div class="card-wrapper">
 		<!-- LEFT -->
 		<div>
-			<span class="state">Vous</span>
-			<span>il y a 5 heures</span>
+			<span class="state">À faire</span>
+			<span>il y a 2 minutes</span>
 			<span class="more"> Voir plus</span>
 			<span class="less">Voir moins</span>
 			<h4 class="content">Problème matériel d’une ampoule au rez-de-chaussée.</h4>
@@ -29,4 +28,5 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div><!--
+-->
