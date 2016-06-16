@@ -15,10 +15,8 @@ $avenir : "Avenir", sans-serif;
   color: $blue_havelock;
 }
 
-
-.header-content {
-  @include content;
-  font-size: 0.9rem;
-  color: $grey_iron;
-  letter-spacing: 0.1px;
+.content {
+  font-family: $avenir;
+  font-weight: 500;
+  font-style: normal;
 }

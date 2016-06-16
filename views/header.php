@@ -1,7 +1,7 @@
 <header>
 	<ul>
 		<li><a href="../index.php" class="logo"><img src="../assets/img/logo.svg" alt="Logo Tribes"></a></li>
-		<li><h2 class="title">Résidence du théâtre</h2><p class="header-content"><i class="fa fa-home" aria-hidden="true"></i>27 avenue du vent</p><p class="header-content"><i class="fa fa-users" aria-hidden="true"></i>16 membres</p></li>
+		<li><h2 class="title">Résidence du théâtre</h2><p class="content"><i class="fa fa-home" aria-hidden="true"></i>27 avenue du vent</p><p class="content"><i class="fa fa-users" aria-hidden="true"></i>16 membres</p></li>
 	</ul>
 
 	<!-- USER PROFIL BUTTON -->

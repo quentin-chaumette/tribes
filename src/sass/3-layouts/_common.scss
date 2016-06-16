@@ -15,7 +15,35 @@ body, html{
 
 .container {
 	width: 100%;
-	padding: 140px 20px 20px 120px;
+	padding: 140px 30px 20px 130px;
+}
+
+.content-container {
+  padding: 40px 0;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	padding: 10px;
+	border-radius: 7px;
+	font-weight: bold;
+}
+
+
+.contain-table {
+  display: table;
+  width: 100%;
+  .v-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .h-center {
+    display: table-cell;
+    text-align: center;
+  }
 }
 
 ::-webkit-scrollbar-track{
@@ -39,31 +67,31 @@ body, html{
 	transition: 150ms all ease;
 }
 
-article.page_content{
-	z-index: 1;
-	padding-top: 100px;
-	min-height: 550px;
-	width: 960px;
-	margin: 0 auto;
-	overflow: scroll;
+// article.page_content{
+// 	z-index: 1;
+// 	padding-top: 100px;
+// 	min-height: 550px;
+// 	width: 960px;
+// 	margin: 0 auto;
+// 	overflow: scroll;
 
-	h1{
-		padding: 30px 0px;
-		font: 22px/30px 'MSB', sans-serif;
-		text-transform: uppercase;
-		color: $gray_medium_dark;
-	}
-	h2{
-		font: 16px 'LL';
-		margin-bottom: 20px;
-	}
-	section{
-		position: relative;
-		overflow: scroll;
-		color : $gray_medium_dark;
-	}
+// 	h1{
+// 		padding: 30px 0px;
+// 		font: 22px/30px 'MSB', sans-serif;
+// 		text-transform: uppercase;
+// 		color: $gray_medium_dark;
+// 	}
+// 	h2{
+// 		font: 16px 'LL';
+// 		margin-bottom: 20px;
+// 	}
+// 	section{
+// 		position: relative;
+// 		overflow: scroll;
+// 		color : $gray_medium_dark;
+// 	}
 
-	.input_hide{
-		display: none;
-	}
-}
+// 	.input_hide{
+// 		display: none;
+// 	}
+// }

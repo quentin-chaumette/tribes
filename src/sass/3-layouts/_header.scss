@@ -17,9 +17,12 @@ header {
 				font-size: 1.5rem;
 				padding-bottom: 5px;
 			}
-			p.header-content {
+			p.content {
 				display: inline-block;
 				padding-right: 20px;
+				font-size: 0.9rem;
+  			color: $grey_iron;
+  			letter-spacing: 0.1px;
 			}
 			i {
 				padding-right: 10px;

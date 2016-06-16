@@ -1,6 +1,9 @@
 #dashboard {
+
+	// NAV
 	nav.nav-sort {
 		text-align: center;
+		padding-left: 50px;
 		ul {
 			li {
 				display: inline-block;
@@ -21,5 +24,186 @@
 				}
 			}
 		}
+	}
+
+	// CARD REQUESTS
+	.requests {
+		width: 100%;
+
+		div.card {
+			width: 33.33%;
+			margin-bottom: 30px;
+			display: inline-block;
+			> div {
+				position: relative;
+				flex: 1;
+				display: flex;
+				margin: 0 10px;
+				background-color: white;
+				box-shadow: 0px 0px 25px -5px $grey_iron;
+				filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey_iron, Direction=NaN, Strength=25);
+				> div {
+					position: relative;
+					vertical-align: middle;
+					display: inline-block;
+					width: 70%;
+					> span {
+						position: absolute;
+						&.state {
+							top: 10px;
+							left: 10px;
+							font-size: 0.8rem;
+							font-style: italic;
+							&::before {
+								content: "";
+								width: 12px;
+								height: 12px;
+								margin-right: 10px;
+								border-radius: 50%;
+								display: inline-block;
+								// à suppr
+								background-color: $red_cinnabar;
+							}
+						}
+						&:nth-child(2) {
+							top: 14px;
+							right: 20px;
+							font-weight: 100;
+							font-size: 0.8rem;
+							color: $grey_silver_chalice;
+						}
+						&.less {
+							display: none;
+							bottom: 10px;
+							right: 20px;
+							@include border_anim;
+						}
+					}
+					// LEFT CARD
+					&:first-child {
+						display: inline-flex;
+						flex-direction: column;
+						padding: 45px 10px 26px;
+						width: 70%;
+						// Title card
+						h4.content {
+							text-align: center;
+							color: $black_abbey;
+							span {
+								display: inline-block;
+								@include border_anim;
+							}
+						}
+						// Card content
+						> p {
+							display: none;
+							font-size: 0.9rem;
+							padding: 20px 0 5px;
+							color: $grey_tundora;
+						}
+						// Attachment
+						a {
+							display: none;
+							text-decoration: underline;
+							font-style: italic;
+							font-size: 0.6rem;
+						}
+						// User card
+						> div {
+							display: none;
+							padding: 20px 0 0;
+							img {
+								display: inline-block;
+								width: 35px;
+    						height: 35px;
+							}
+							> div {
+								display: inline-block;
+								font-size: 0.85rem;
+								h5 span {
+									display: inline-block;
+									text-transform: uppercase;
+								}
+								p {
+									font-size: 0.7rem;
+									line-height: 1.1rem;
+									color: $grey_tundora;
+								}
+							}
+						}
+					}
+					// RIGHT CARD
+					&:last-child {
+						display: inline-flex;
+						padding: 0 10px;
+						width: 30%;
+						text-align: center;
+						// à suppr
+						background-color: white_alabaster;
+						> div {
+							width: 100%;
+							margin: auto;
+							a {
+								font-size: 0.8rem;
+								margin-top: 10px;
+								font-weight: 500;
+								display: block;
+								text-decoration: underline;
+								// à suppr
+								color: $blue_havelock;
+							}
+						}
+						p.item-subtitle {
+							display: none;
+							padding-bottom: 15px;
+							font-weight: 500;
+							font-size: 0.8rem;
+							font-style: italic;
+						}
+					}
+				}
+			}
+			// EXPANDED
+			&.expanded {
+				> div {
+					> div {
+						> span {
+							&.less {
+								display: block;
+							}
+						}
+						&:first-child {
+							padding: 45px 10px 10px;
+							h4.content {
+								.more {
+									display: none;
+								}
+							}
+							p {
+								display: block;
+							}
+							a {
+								display: block;
+							}
+							> div {
+								display: block;
+							}
+						}
+						&:last-child {
+							p.item-subtitle {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button {
+	background-color: $red_carnation;
+	&:hover {
+		background-color: $red_cinnabar;
 	}
 }

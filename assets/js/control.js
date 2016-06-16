@@ -25,6 +25,22 @@ var control = {
 			mi.setAttribute('placeholder', 'exemple@gmail.com');
 			$('.inputs-mail').append(mi);
 		});
-	}
 
+		// Expand card
+		$('.more').on('click', function (e) {
+			self.expandCard.apply(this, e)
+		})
+
+		$('.less').on('click', function (e) {
+			self.foldUpCard.apply(this, e)
+		})
+	},
+
+	expandCard: function (e) {
+		$(this).parents('.card')[0].classList.add('expanded');
+	},
+
+	foldUpCard: function (e) {
+		$(this).parents('.card')[0].classList.remove('expanded');
+	}
 }
