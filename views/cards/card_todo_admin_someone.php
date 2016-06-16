@@ -1,5 +1,4 @@
-<!--
---><!-- CARD : ADMIN que quelqu'un a posté, qui n'est pas encore prise "À prendre" ADD CLASS = toTake--><div class="card toTake">
+<div class="card toTake">
 	<div class="card-wrapper">
 		<!-- LEFT -->
 		<div>
@@ -29,5 +28,4 @@
 			</div>
 		</div>
 	</div>
-</div><!--
--->
+</div>

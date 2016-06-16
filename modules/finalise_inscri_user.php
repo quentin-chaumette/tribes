@@ -14,7 +14,7 @@ if(isset($_POST['add_user'])){
 		$mail=$_POST['mail'];
 		$pass=$_POST['pass'];
 
-		$update = mysqli_query($link, "UPDATE users SET firstname='$firstname',name='$name',local='$local',pass='$pass' WHERE mail='$mail' " );
+		$update = mysqli_query($link, "UPDATE users SET firstname='$firstname',name='$name',local='$local',pass='$pass', user_type='normal' WHERE mail='$mail' " );
 
 		header ("location: ../views/dashboard.php");
 	}

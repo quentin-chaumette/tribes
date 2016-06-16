@@ -20,7 +20,7 @@ if(isset($_POST['add_user'])){
 			// if user exist give back error
 		}		
 		else {
-			$insertion = mysqli_query($link, "INSERT INTO users (firstname,name,local,mail,pass) VALUES ('$firstname','$name','$local', '$mail', '$pass') " );	
+			$insertion = mysqli_query($link, "INSERT INTO users (firstname,name,local,mail,pass, user_type) VALUES ('$firstname','$name','$local', '$mail', '$pass', 'admin') " );	
 			$inserted = mysqli_query($link, "SELECT * FROM users ORDER BY id DESC LIMIT 1" );
 			while ($row = mysqli_fetch_assoc($inserted)) {
 				$user_id = $row["id"];

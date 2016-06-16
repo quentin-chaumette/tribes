@@ -3,7 +3,9 @@
 	echo "<body>";
 	include 'header.php';
 	include 'left_navbar.php';
+	include '../modules/db_connect.php';
 	include '../modules/get_requests.php';
+	include '../modules/get_user.php';
 ?>
 <!-- PAGE CONTENT -->
 
@@ -21,6 +23,42 @@
 
 		<section class="requests content-container">
 			<?php
+				$coprop_id = 1;			// to dynamise cookie connexion
+				$current_user_type = 'normal';		// to dynamise cookie connexion
+				$current_user_id=2;
+				$requests_sql = get_requests($coprop_id);
+				while($request = mysqli_fetch_assoc($requests_sql)){
+					$author=get_user($request['author_id']);
+					$in_charge=get_user($request['in_charge_id']);
+
+					if($request['status']=="todo"){
+						/*echo "<div class='card toDo'>";
+						include 'cards/card_todo_everyone.php';
+						echo "</div>";*/
+					}
+					elseif($request['status']=="todo_admin"){
+						/*echo "<div class='card toDo'>";
+						include 'cards/card_toDoAdmin.php';
+						echo "</div>";*/			
+					}					
+					elseif ($request['status']=="doing") {
+						echo "<div class='card doing'>";
+						include 'cards/card_doing.php';
+						echo "</div>";
+					}
+					elseif ($request['status']=="syndic") {
+						echo "<div class='card attribute'>";
+						include 'cards/card_syndic.php';
+						echo "</div>";
+					}					
+					elseif ($request['status']=="done") {
+						echo "<div class='card done'>";
+						include 'cards/card_done.php';
+						echo "</div>";
+					}
+				}
+
+				/*
 				include 'cards/card_todo_admin_someone.php';
 				include 'cards/card_todo_admin_you.php';
 				include 'cards/card_todo_admin_toyou.php';
@@ -29,6 +67,7 @@
 				include 'cards/card_done.php';
 				include 'cards/card_todo_user_admin.php';
 				include 'cards/card_todo_syndic.php';
+				*/
 			?>
 			<button type="submit" value="Submit" class="add-card">+ Ajouter une requête</button>
 		</section>
