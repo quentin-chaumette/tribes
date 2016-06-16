@@ -1,4 +1,6 @@
 article.inscription_phase{
+	margin-top: 150px;	// sinon les formulaires sont recouverts par le header
+
 	form{
 		width: 300px;
 
@@ -10,6 +12,15 @@ article.inscription_phase{
 			font: 14px 'LL';
 			outline: none;
 			margin-top: 10px;
+
+			&.invalid{
+				border-radius: 4px 0px 0px 4px;
+				border-right: 3px solid rgba(200,100,100,0.6);
+			}
+			&.valid{
+				border-radius: 4px 0px 0px 4px;
+				border-right: 3px solid rgba(100,200,100,0.6);
+			}
 		}
 	}
 }

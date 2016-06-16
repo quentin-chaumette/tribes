@@ -19,7 +19,7 @@
 			<input type="text" name="city" id="city" placeholder="Ville" required="required"></input>
 			<?php
 				$user_id=$_GET["user_id"];
-				echo " <input class=\"input_hide\" type=\"text\" name=\"user_id\" value=\"".$user_id."\" ></input>";
+				echo " <input class=\"input_hide\" type=\"text\" name=\"user_id\" value=\"".$user_id."\" READONLY></input>";
 			?>
 			<input type="submit" name="add_coprop" id="add_coprop" value="Suivant"></input>
 		</form>
@@ -30,7 +30,7 @@
 <!-- END PAGE CONTENT -->
 <?php
 	include 'footer.php';
-	include 'modules/scripts_calls.php';
+	include '../modules/scripts_calls.php';
 ?>
 </body>
 </html>

@@ -17,7 +17,7 @@
 			<span class="add_mail_field">+</span>
 			<?php 
 				$coprop_id=$_GET["coprop_id"]; 
-				echo " <input class=\"input_hide\" type=\"text\" name=\"coprop_id\" value=\"".$coprop_id."\" ></input>"; 
+				echo " <input class=\"input_hide\" type=\"text\" name=\"coprop_id\" value=\"".$coprop_id."\" READONLY></input>"; 
 			?>
 			<input type="submit" name="add_coproprios" id="add_coproprios" value="Terminer"></input>
 			<a href="dashboard.php">Je le ferai plus tard</a>

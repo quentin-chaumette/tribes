@@ -26,6 +26,42 @@ var control = {
 			$('.inputs-mail').append(mi);
 		});
 
+		// Inscription User : check if mail already exist
+		$('#mail-user-inscription').on('focusout', function (e) {
+			var this_input=$(this);
+			var user_mail=this.value;
+			self.check_user_exist(user_mail, function(user_exist){			
+				if(user_exist){
+					this_input.removeClass("valid");
+					this_input.addClass("invalid");
+					$('.msg-error-user-exist').html("Cet email existe déjà.");
+					$('input[type=submit]').prop('disabled', true);
+				}
+				else{
+					this_input.removeClass("invalid");
+					this_input.addClass("valid");
+					$('.msg-error-user-exist').html("");
+					$('input[type=submit]').prop('disabled', false);
+				}				
+			});
+		})
+
+		// Inputs : check if confirm_mdp = mdp
+		$('#confirm_pass').on('focusout', function (e) {
+			if($('#pass').val() != this.value){
+				$(this).removeClass("valid");
+				$(this).addClass("invalid");
+				$('.msg-error-match-passw').html("Les mots de passe ne concordent pas.");
+				$('input[type=submit]').prop('disabled', true);
+			}
+			else if($('#pass').val() == this.value){
+				$(this).removeClass("invalid");
+				$(this).addClass("valid");
+				$('.msg-error-match-passw').html("");
+				$('input[type=submit]').prop('disabled', false);
+			}
+		})
+
 		// Expand card
 		$('.more').on('click', function (e) {
 			self.expandCard.apply(this, e)
@@ -34,6 +70,22 @@ var control = {
 		$('.less').on('click', function (e) {
 			self.foldUpCard.apply(this, e)
 		})
+	},
+
+	check_user_exist: function (user_mail, callback) {
+		var user_exist = false;
+		model.async('GET', '../modules/async_check_user_exist.php?user_mail='+user_mail, '', function(xhr){
+			
+			if(xhr.response == "exist"){
+				user_exist = true;
+				callback.call(this, user_exist);
+			}
+			else if(xhr.response == "noexist"){
+				user_exist=false;
+				callback.call(this, user_exist);
+			}
+		});
+		
 	},
 
 	expandCard: function (e) {

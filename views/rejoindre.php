@@ -13,7 +13,7 @@
 			<input type="text" name="local" id="local" placeholder="Localisation" required="required"></input>
 			<?php
 				if($_GET['user_mail']){
-					echo " <input type=\"text\" name=\"mail\" id=\"mail\" value=\"".$_GET['user_mail']."\" ></input>"; 	
+					echo " <input type=\"text\" name=\"mail\" id=\"mail\" value=\"".$_GET['user_mail']."\" READONLY></input>"; 	
 				}
 				else{
 
@@ -21,6 +21,7 @@
 			?>
 			<input type="password" name="pass" id="pass" placeholder="Mot de passe" required="required"></input>
 			<input type="password" name="confirm_pass" id="confirm_pass" placeholder="Confirmation du mot de passe" required="required"></input>
+			<p class="msg-error-match-passw"></p>			
 			<input type="submit" name="add_user" id="add_user" value="Suivant"></input>
 		</form>
 
