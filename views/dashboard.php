@@ -16,7 +16,7 @@
 				<li><a href="#" class="title">Non traitées</a></li>
 				<li><a href="#" class="title">En cours</a></li>
 				<li><a href="#" class="title">Terminées</a></li>
-				<li><a href="#" class="title">Refusées</a></li>
+				<li><a href="#" class="title">Attribuées</a></li>
 			</ul>
 		</nav>
 
@@ -54,6 +54,36 @@
 					</div>
 				</div>
 			</div><!--
+			--><!-- CARD : ADMIN que quelqu'un a posté, qui n'est pas encore prise "À prendre" ADD CLASS = toTake--><div class="card toTake">
+				<div class="card-wrapper">
+					<!-- LEFT -->
+					<div>
+						<span class="state">Vous</span>
+						<span>il y a 5 heures</span>
+						<span class="more"> Voir plus</span>
+						<span class="less">Voir moins</span>
+						<h4 class="content">Problème matériel d’une ampoule au rez-de-chaussée.</h4>
+						<p>L’ampoule en face de chez moi est grillée. Le plafond est très haut, quelqu’un se rendrait disponible pour la changer ?</p>
+						<a href="http://IMG-capture-0034.jpg" download="fichier_Tribes" class="item-subtitle">IMG-capture-0034.jpg</a>
+						<div>
+							<img class="user-img" src="http://lorempixel.com/200/200/cats" alt="">
+							<div>
+								<h5 class="title">Corentin <span>Carilo</span></h5>
+								<p class="item-subtitle">Bâtiment A - 1er étage</p>
+							</div>
+						</div>
+					</div><!-- RIGHT
+					--><div>
+						<div>
+							<p class="item-subtitle">Ne laissons pas le Syndic nous facturer 5 fois plus cher !</p>
+							<button type="submit" value="Submit">
+								<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+								Je prends
+							</button>
+						</div>
+					</div>
+				</div>
+			</div><!--
 			--><!-- CARD : que l'ADMIN a choisi de faire "À faire", ADD CLASS = toDo--><div class="card toDo">
 				<div class="card-wrapper">
 					<!-- LEFT -->
@@ -87,6 +117,39 @@
 					</div>
 				</div>
 			</div><!--
+			--><!-- CARD : que le USER a choisi de faire "À faire", ADD CLASS = toDo--><div class="card toDo">
+				<div class="card-wrapper">
+					<!-- LEFT -->
+					<div>
+						<span class="state">Vous</span>
+						<span>il y a 5 heures</span>
+						<span class="more"> Voir plus</span>
+						<span class="less">Voir moins</span>
+						<h4 class="content">Problème matériel d’une ampoule au rez-de-chaussée.</h4>
+						<p>L’ampoule en face de chez moi est grillée. Le plafond est très haut, quelqu’un se rendrait disponible pour la changer ?</p>
+						<a href="http://IMG-capture-0034.jpg" download="fichier_Tribes" class="item-subtitle">IMG-capture-0034.jpg</a>
+						<div>
+							<img class="user-img" src="http://lorempixel.com/200/200/cats" alt="">
+							<div>
+								<h5 class="title">Corentin <span>Carilo</span></h5>
+								<p class="item-subtitle">Bâtiment A - 1er étage</p>
+							</div>
+						</div>
+					</div><!-- RIGHT
+					--><div>
+						<div>
+							<p class="item-subtitle">Ne laissons pas le Syndic nous facturer 5 fois plus cher !</p>
+							<button type="submit" value="Submit" class="submit">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</button>
+							<button type="submit" value="Submit" class="cancel">
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</button>
+							<a href="mailto:mon_syndic@syndic.net">Envoyer au Conseil Syndical</a>
+						</div>
+					</div>
+				</div>
+			</div><!--
 			--><!-- CARD : ADMIN a choisi de faire "En cours", ADD CLASS = doing
 			--><div class="card doing">
 				<div class="card-wrapper">
@@ -116,8 +179,7 @@
 					</div>
 				</div>
 			</div><!--
-			--><!--
-			--><!-- CARD : qu'un user fait "Résolue", ADD CLASS = done
+			--><!-- CARD : qu'un user a fait "Résolue", ADD CLASS = done
 			--><div class="card done">
 				<div class="card-wrapper">
 					<!-- LEFT -->
@@ -142,6 +204,64 @@
 							<p class="item-subtitle">Ne laissons pas le Syndic nous facturer 5 fois plus cher !</p>
 							<i class="fa fa-check-circle" aria-hidden="true"></i>
 							<h5 class="title">Jean-Paul-Eude</h5>
+						</div>
+					</div>
+				</div>
+			</div><!--
+			--><!-- CARD : qu'un USER a envoyé au CONSEIL SYNDICAL, ADD CLASS = attribute
+			--><div class="card attribute">
+				<div class="card-wrapper">
+					<!-- LEFT -->
+					<div>
+						<span class="state">Transmise</span>
+						<span>il y a 2 jours</span>
+						<span class="more"> Voir plus</span>
+						<span class="less">Voir moins</span>
+						<h4 class="content">Problème matériel d’une ampoule au rez-de-chaussée.</h4>
+						<p>L’ampoule en face de chez moi est grillée. Le plafond est très haut, quelqu’un se rendrait disponible pour la changer ?</p>
+						<a href="http://IMG-capture-0034.jpg" download="fichier_Tribes" class="item-subtitle">IMG-capture-0034.jpg</a>
+						<div>
+							<img class="user-img" src="http://lorempixel.com/200/200/cats" alt="">
+							<div>
+								<h5 class="title">Corentin <span>Carilo</span></h5>
+								<p class="item-subtitle">Bâtiment A - 1er étage</p>
+							</div>
+						</div>
+					</div><!-- RIGHT
+					--><div>
+						<div>
+							<p class="item-subtitle">Ne laissons pas le Syndic nous facturer 5 fois plus cher !</p>
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+							<h5 class="title">Attribuée au Conseil Syndical</h5>
+						</div>
+					</div>
+				</div>
+			</div><!--
+			--><!-- CARD : qu'un ADMIN a envoyé au SYNDIC, ADD CLASS = attribute
+			--><div class="card attribute">
+				<div class="card-wrapper">
+					<!-- LEFT -->
+					<div>
+						<span class="state">Transmise</span>
+						<span>il y a 2 jours</span>
+						<span class="more"> Voir plus</span>
+						<span class="less">Voir moins</span>
+						<h4 class="content">Problème matériel d’une ampoule au rez-de-chaussée.</h4>
+						<p>L’ampoule en face de chez moi est grillée. Le plafond est très haut, quelqu’un se rendrait disponible pour la changer ?</p>
+						<a href="http://IMG-capture-0034.jpg" download="fichier_Tribes" class="item-subtitle">IMG-capture-0034.jpg</a>
+						<div>
+							<img class="user-img" src="http://lorempixel.com/200/200/cats" alt="">
+							<div>
+								<h5 class="title">Corentin <span>Carilo</span></h5>
+								<p class="item-subtitle">Bâtiment A - 1er étage</p>
+							</div>
+						</div>
+					</div><!-- RIGHT
+					--><div>
+						<div>
+							<p class="item-subtitle">Ne laissons pas le Syndic nous facturer 5 fois plus cher !</p>
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+							<h5 class="title">Attribuée au Syndic</h5>
 						</div>
 					</div>
 				</div>

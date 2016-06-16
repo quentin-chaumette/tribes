@@ -94,7 +94,6 @@
   }
 }
 
-
 &.done {
   > div {
     > div {
@@ -106,6 +105,33 @@
       }
       &:last-child {
         background-color: rgba($grey_bluewood, 0.4);
+        color: white;
+        i {
+          font-size: 2rem;
+          padding-bottom: 5px;
+        }
+        p {
+          color: white;
+        }
+        h5 {
+          padding-top: 5px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+&.attribute {
+  > div {
+    > div {
+      > span {
+        &.state::before {
+          background-color: $yellow_buttercup;
+        }
+      }
+      &:last-child {
+        background-color: $yellow_buttercup;
         color: white;
         i {
           font-size: 2rem;
