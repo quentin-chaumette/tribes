@@ -1,0 +1,19 @@
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+
+  &.btn-blue {
+    text-transform: uppercase;
+    background-color: $blue_havelock;
+    border-bottom: 3px solid $blue_mariner;
+    margin: 0 10px;
+    &:hover {
+      background-color: $blue_mariner;
+    }
+  }
+}

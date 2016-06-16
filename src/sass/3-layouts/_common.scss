@@ -22,16 +22,10 @@ body, html{
   padding: 40px 0;
 }
 
-button {
-	border: none;
-	outline: none;
-	cursor: pointer;
-	color: white;
-	padding: 10px;
-	border-radius: 7px;
-	font-weight: bold;
+input, textarea {
+  outline: none;
+  resize: none;
 }
-
 
 .contain-table {
   display: table;

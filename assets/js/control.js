@@ -94,7 +94,6 @@ var control = {
 		$('.more').on('click', function (e) {
 			self.expandCard.apply(this, e)
 		})
-
 		$('.less').on('click', function (e) {
 			self.foldUpCard.apply(this, e)
 		})
@@ -102,6 +101,18 @@ var control = {
 		// Show modal
 		$('.add-card').on('click', function (e) {
 			self.showModal.apply(this, e)
+		})
+		// Hide modal
+		$('.close').on('click', function (e) {
+			self.hideModal.apply(this, e)
+		})
+
+		// Counter
+		$('.input-object').on('keyup', function (e) {
+			self.counter.apply(this, e)
+		})
+		$('.text-content').on('keyup', function (e) {
+			self.counter2.apply(this, e)
 		})
 	},
 
@@ -142,6 +153,16 @@ var control = {
 	},
 
 	showModal: function(e) {
-		$('#dashboard').toggleClass('overlay');
+		$('.overlay').addClass('is-active');
+	},
+	hideModal: function(e) {
+		$('.overlay').removeClass('is-active');
+	},
+
+	counter: function(e) {
+		$('.counter').html(0 + this.value.length);
+	},
+	counter2: function(e) {
+		$('.counter2').html(0 + this.value.length);
 	}
 }

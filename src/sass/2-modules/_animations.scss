@@ -1,32 +1,32 @@
-@keyframes indexAppear{
-	0%, 15%{	opacity: 0;	}
-	100%{	opacity: 1;	}
-}
+// @keyframes indexAppear{
+// 	0%, 15%{	opacity: 0;	}
+// 	100%{	opacity: 1;	}
+// }
 
-@keyframes loader{
-	0%, 10%{	transform: translate(-50%, -50%) scale(0); opacity: 1;	}
-	60%{	transform: translate(-50%, -50%) scale(3);	opacity: 0; }
-	60.1%{	transform: translate(-50%, -50%) scale(0);	opacity: 0; }
-	60.2%{	transform: translate(-50%, -50%) scale(0);	opacity: 1; }
-	100%{	transform: translate(-50%, -50%) scale(3);	opacity: 0; }
-}
+// @keyframes loader{
+// 	0%, 10%{	transform: translate(-50%, -50%) scale(0); opacity: 1;	}
+// 	60%{	transform: translate(-50%, -50%) scale(3);	opacity: 0; }
+// 	60.1%{	transform: translate(-50%, -50%) scale(0);	opacity: 0; }
+// 	60.2%{	transform: translate(-50%, -50%) scale(0);	opacity: 1; }
+// 	100%{	transform: translate(-50%, -50%) scale(3);	opacity: 0; }
+// }
 
-@keyframes scaleOnClick{
-	0%{	transform: scale(1.4); opacity: 1;	}
-	25%{	transform: scale(1.9); opacity: 1;	}
-	50%{	transform: scale(2.4); opacity: 0;	}
-	100%{	transform: scale(2.4); opacity: 0;	}
-}
+// @keyframes scaleOnClick{
+// 	0%{	transform: scale(1.4); opacity: 1;	}
+// 	25%{	transform: scale(1.9); opacity: 1;	}
+// 	50%{	transform: scale(2.4); opacity: 0;	}
+// 	100%{	transform: scale(2.4); opacity: 0;	}
+// }
 
-@keyframes heartbeat{
-	0%{	transform: scale(1.1);}
-	30%{	transform: scale(1.1);}
-	50%{	transform: scale(0.95);}
-	70%{	transform: scale(1.1);}
-	100%{	transform: scale(1.1);}
-}
+// @keyframes heartbeat{
+// 	0%{	transform: scale(1.1);}
+// 	30%{	transform: scale(1.1);}
+// 	50%{	transform: scale(0.95);}
+// 	70%{	transform: scale(1.1);}
+// 	100%{	transform: scale(1.1);}
+// }
 
-@keyframes bounceRight{
-	0%, 100%{	right: 18px;	}
-	50%{	right: 12px;	}
-}
+// @keyframes bounceRight{
+// 	0%, 100%{	right: 18px;	}
+// 	50%{	right: 12px;	}
+// }

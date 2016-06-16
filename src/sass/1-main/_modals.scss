@@ -4,10 +4,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: $blue_mariner;
-  z-index: 100;
+  background-color: rgba($blue_mariner, 0.5);
+  z-index: -100;
   display: block;
-  opacity: 1;
+  opacity: 0;
   &.is-active {
     z-index: 100;
     opacity: 1;
@@ -15,9 +15,80 @@
   div.modal {
     position: relative;
     top: 150px;
+    width: 100%;
     max-width: 470px;
     margin: auto;
     padding: 40px;
+    border-radius: 10px;
     background-color: white;
+
+    .fa-times {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: $black_abbey;
+      cursor: pointer;
+      &:hover {
+        color: rgba($black_abbey, 0.6);
+      }
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    p {
+      color: $grey_iron;
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: inline-block;
+      text-decoration: underline;
+    }
+    > span {
+      font-size: 1.1rem;
+      padding: 30px 0 10px;
+      display: inline-block;
+      color: $grey_iron;
+    }
+    form {
+      text-align: center;
+      position: relative;
+      input, textarea {
+        color: $black_abbey;
+        font-weight: 500;
+        display: block;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: 1px solid rgba($grey_silver_chalice, 0.4);
+        background-color: $white_alabaster;
+      }
+      .count {
+        font-size: 13px;
+        position: absolute;
+        right: 0;
+        padding-right: 10px;
+        margin-top: -32px;
+        color: $grey_silver_chalice;
+        &:nth-child(2) {
+          right: 80px;
+        }
+        span {
+          display: inline-block;
+        }
+      }
+      input {
+        width: 80%;
+      }
+      textarea {
+        width: 100%;
+      }
+      button {
+        margin: 20px 0 0;
+      }
+    }
+
   }
 }
+
