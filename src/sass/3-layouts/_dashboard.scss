@@ -70,6 +70,12 @@
 							font-size: 0.8rem;
 							color: $grey_silver_chalice;
 						}
+						&.more {
+							bottom: 10px;
+							right: 20px;
+							display: inline-block;
+							@include border_anim;
+						}
 						&.less {
 							display: none;
 							bottom: 10px;
@@ -87,10 +93,6 @@
 						h4.content {
 							text-align: center;
 							color: $black_abbey;
-							span {
-								display: inline-block;
-								@include border_anim;
-							}
 						}
 						// Card content
 						> p {
@@ -162,17 +164,15 @@
 				> div {
 					> div {
 						> span {
+							&.more {
+								display: none;
+							}
 							&.less {
 								display: block;
 							}
 						}
 						&:first-child {
 							padding: 45px 10px 10px;
-							h4.content {
-								.more {
-									display: none;
-								}
-							}
 							p {
 								display: block;
 							}

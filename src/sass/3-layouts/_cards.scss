@@ -24,3 +24,40 @@
   }
 }
 
+&.toDo {
+  > div {
+    > div {
+      > span {
+        &.state::before {
+          background-color: $green_jungle;
+        }
+      }
+      &:last-child {
+        background-color: $white_alabaster;
+        > div {
+          button {
+            font-size: 1rem;
+            &.submit {
+              background-color: $blue_havelock;
+              &:hover {
+                background-color: $blue_mariner;
+              }
+            }
+            &.cancel {
+              background-color: $red_carnation;
+              &:hover {
+                background-color: $red_cinnabar;
+              }
+              i {
+                padding: 0 1.5px;
+              }
+            }
+          }
+          a {
+            color: $blue_havelock;
+          }
+        }
+      }
+    }
+  }
+}
