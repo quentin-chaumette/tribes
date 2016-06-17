@@ -60,31 +60,31 @@ a {
   padding-bottom: 20px;
 }
 
+input.input_hide{
+	display: none !important;
+}
 // article.page_content{
-// 	z-index: 1;
-// 	padding-top: 100px;
-// 	min-height: 550px;
-// 	width: 960px;
-// 	margin: 0 auto;
-// 	overflow: scroll;
+//  z-index: 1;
+//  padding-top: 100px;
+//  min-height: 550px;
+//  width: 960px;
+//  margin: 0 auto;
+//  overflow: scroll;
 
-// 	h1{
-// 		padding: 30px 0px;
-// 		font: 22px/30px 'MSB', sans-serif;
-// 		text-transform: uppercase;
-// 		color: $gray_medium_dark;
-// 	}
-// 	h2{
-// 		font: 16px 'LL';
-// 		margin-bottom: 20px;
-// 	}
-// 	section{
-// 		position: relative;
-// 		overflow: scroll;
-// 		color : $gray_medium_dark;
-// 	}
+//  h1{
+//    padding: 30px 0px;
+//    font: 22px/30px 'MSB', sans-serif;
+//    text-transform: uppercase;
+//    color: $gray_medium_dark;
+//  }
+//  h2{
+//    font: 16px 'LL';
+//    margin-bottom: 20px;
+//  }
+//  section{
+//    position: relative;
+//    overflow: scroll;
+//    color : $gray_medium_dark;
+//  }
 
-// 	.input_hide{
-// 		display: none;
-// 	}
 // }

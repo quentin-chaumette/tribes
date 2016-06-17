@@ -16,11 +16,13 @@ form {
   h1 {
     text-transform: uppercase;
     font-size: 1.7rem;
+    line-height: 2 .5rem;
     margin-bottom: 30px;
   }
   form {
     background-color: white;
     width: 580px;
+    position: relative;
     margin: 0 auto;
     padding: 50px 70px;
     /* CODEPEN
@@ -132,4 +134,12 @@ form {
   }
 }
 
-
+.add_mail_field {
+  color: white;
+  padding: 10px 12px;
+  border-radius: 7px;
+  position: absolute;
+  right: 100px;
+  bottom: 150px;
+  background-color: $red_cinnabar;
+}

@@ -48,7 +48,7 @@
       </div>
 			<p class="msg-error-match-passw"></p>
 			<button type="submit" name="add_user" id="add_user" class="btn-blue" value="Suivant">Valider</button>
-			<a class="item-subtitle" style="text-decoration:underline;" href="connexion.php">Vous êtes déjà inscrit ?</a>
+			<a class="item-subtitle" style="text-decoration:underline; text-align: right;" href="connexion.php">Vous êtes déjà inscrit ?</a>
 		</form>
 
 	</section>

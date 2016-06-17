@@ -5,30 +5,37 @@
 <!-- PAGE CONTENT -->
 
 
-	<article class="page_content inscription_phase" id="invit_coproprios">
-		<h1>Invitez des copropriétaires ou locataires</h1>
-		<h2>Saisissez les adresses mail :</h2>
+	<section class="page_content inscription_phase container" id="invit_coproprios">
 		<form id="coproprios_invitation" action="../modules/insert_coproprios.php" method="post">
+			<h1 class="title">Invitez des copropriétaires à vous rejoindre</h1>
 			<div class="inputs-mail">
-				<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
-				<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
-				<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com"></input>
+				<div class="group">
+					<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com" style="width:80%;"></input>
+					<span class="highlight"></span>
+	      	<span class="bar" style="width:80%"></span>
+	      </div>
+	      <div class="group">
+					<input type="email" name="mail[]" class="mail" placeholder="exemple@gmail.com" style="width:80%;"></input>
+					<span class="highlight"></span>
+	      	<span class="bar" style="width:80%"></span>
+	      </div>
+
 			</div>
-			<span class="add_mail_field">+</span>
+			<i class="fa fa-plus add_mail_field" aria-hidden="true"></i>
+
 			<?php
 				$coprop_id=$_GET["coprop_id"];
 				echo " <input class=\"input_hide\" type=\"text\" name=\"coprop_id\" value=\"".$coprop_id."\" READONLY></input>";
 			?>
-			<input type="submit" name="add_coproprios" id="add_coproprios" value="Terminer"></input>
-			<a href="dashboard.php">Je le ferai plus tard</a>
+			<button class="btn-blue" type="submit" name="add_coproprios" id="add_coproprios">Envoyer l'invitation</button>
+			<a class="item-subtitle" href="dashboard.php" style="text-decoration:underline;">Je le ferai plus tard</a>
 		</form>
 
-	</article>
+	</section>
 
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'footer.php';
 	include '../modules/scripts_calls.php';
 ?>
 </body>

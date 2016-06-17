@@ -7,14 +7,29 @@
 <!-- PAGE CONTENT -->
 
 
-	<article id="page_content">
-
-	</article>
+	<section class="page_content inscription_phase container">
+    <form method="post">
+      <h1 class="title">Se connecter</h1>
+      <div class="group">
+        <input type="email" name="mail" id="mail-user-inscription" required="required">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Votre email</label>
+      </div>
+      <div class="group">
+        <input type="password" minlength=6 name="pass" id="pass" pattern="(*\d)(*[a-z])(*[A-Z]).{6,}" required="required">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Votre mot de passe</label>
+      </div>
+      <button type="submit" class="btn-blue" value="Suivant">Valider</button>
+      <a class="item-subtitle" style="text-decoration:underline;" href="inscritpion.php">Je n'ai pas encore de compte.</a>
+    </form>
+	</section>
 
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'views/footer.php';
 	include '../modules/scripts_calls.php';
 ?>
 </body>

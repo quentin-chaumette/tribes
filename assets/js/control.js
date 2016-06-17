@@ -19,11 +19,15 @@ var control = {
 
 		self.$document.on('click', '.add_mail_field', function (e) {
 			var mi = document.createElement("input");
+			var mo = document.createElement("div");
+			mo.setAttribute('class', 'group')
+			$(mo).append(mi)
 			mi.setAttribute('type', 'text');
 			mi.setAttribute('name', 'mail');
 			mi.setAttribute('class', 'mail');
 			mi.setAttribute('placeholder', 'exemple@gmail.com');
-			$('.inputs-mail').append(mi);
+			$(mi).css('width', '80%')
+			$('.inputs-mail').append(mo);
 		});
 
 		// Inscription User : check if mail already exist

@@ -30,7 +30,6 @@
 
 <!-- END PAGE CONTENT -->
 <?php
-	include 'footer.php';
 	include '../modules/scripts_calls.php';
 ?>
 </body>
