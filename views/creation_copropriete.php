@@ -9,23 +9,49 @@
 <!-- PAGE CONTENT -->
 
 
-	<article class="page_content inscription_phase" id="coprop_creation">
-		<h1>Créer une copropriété</h1>
-		<h2>Saisissez les informations suivantes :</h2>
+	<section class="page_content inscription_phase container" id="coprop_creation">
 		<form id="copro_creation" action="../modules/insert_coprop.php" method="post">
-			<input type="text" name="title" id="coprop-title-inscription" placeholder="Nom *" required="required"></input>
+			<h1 class="title">Données de votre copropriéré</h1>
+			<div class="group">
+				<input type="text" name="title" id="coprop-title-inscription" required="required"></input>
+				<span class="highlight"></span>
+      	<span class="bar"></span>
+      	<label>Son nom<span>*</span></label>
+      </div>
 			<p class="msg-error-coprop-exist"></p>
-			<input type="text" name="address" id="address" placeholder="Adresse *" required="required"></input>
-			<input type="text" name="postal_code" id="postal_code" placeholder="Code postal *" required="required"></input>
-			<input type="text" name="city" id="city" placeholder="Ville *" required="required"></input>
-			<input type="email" name="syndic_mail" id="syndic-mail" placeholder="Email du Syndic *" required="required"></input>
+			<div class="group">
+				<input type="text" name="address" id="address" required="required"></input>
+				<span class="highlight"></span>
+      	<span class="bar"></span>
+      	<label>Adresse<span>*</span></label>
+      </div>
+      <div class="group">
+				<input type="text" name="postal_code" id="postal_code" required="required"></input>
+				<span class="highlight"></span>
+      	<span class="bar"></span>
+      	<label>Code postal<span>*</span></label>
+      </div>
+      <div class="group">
+				<input type="text" name="city" id="city" required="required"></input>
+				<span class="highlight"></span>
+      	<span class="bar"></span>
+      	<label>Ville<span>*</span></label>
+      </div>
+      <h1 class="title">Indiquez l'email de votre Syndic en charge</h1>
+      <div class="group">
+				<input type="email" name="syndic_mail" id="syndic-mail" required="required"></input>
+				<span class="highlight"></span>
+      	<span class="bar"></span>
+      	<label>Email du Syndic<span>*</span></label>
+      </div>
 			<?php
 				$user_id=$_GET["user_id"];
 				echo " <input class=\"input_hide\" type=\"text\" name=\"user_id\" value=\"".$user_id."\" READONLY></input>";
 			?>
-			<input type="submit" name="add_coprop" id="add_coprop" value="Suivant"></input>
+			<button class="btn-blue" type="submit" name="add_coprop" id="add_coprop">C'est parti</button>
+			<a class="item-subtitle" style="text-decoration:underline;" href="connexion.php">Vous copropriété est déjà inscrite ? Connectez-vous.</a>
 		</form>
-	</article>
+	</section>
 
 
 <!-- END PAGE CONTENT -->
