@@ -44,18 +44,18 @@
 							echo "<div class='card attribute'>";
 						}
 						include 'cards/card_todo_admin.php';
-						echo "</div>";			
-					}					
+						echo "</div>";
+					}
 					elseif ($request['status']=="doing") {
 						if($current_user_id==$request['in_charge_id']){
 							echo "<div class='card toDo'>";
 						}
 						elseif($current_user_type=="admin"){
 							echo "<div class='card doing'>";
-						}						
+						}
 						else{
 							echo "<div class='card doing'>";
-						}						
+						}
 						include 'cards/card_doing.php';
 						echo "</div>";
 					}
@@ -63,7 +63,7 @@
 						echo "<div class='card attribute'>";
 						include 'cards/card_syndic.php';
 						echo "</div>";
-					}					
+					}
 					elseif ($request['status']=="done") {
 						echo "<div class='card done'>";
 						include 'cards/card_done.php';
