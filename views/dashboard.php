@@ -14,7 +14,7 @@
 		<p>Votre appartement : </p> <span> Bâtiment B - 308</span>
 		<form action="POST">
 			<input class="input-object" type="text" placeholder="Description en une phrase..." maxlength="50"><div class="count"><span class="counter">0</span>/50</div>
-			<textarea class="text-content" name="textarea" id="" cols="30" rows="10" placeholder="Dites-en plus..." maxlength="150"></textarea><div class="count"><span class="counter2">0</span>/50</div>
+			<textarea class="text-content" name="textarea" id="" cols="30" rows="10" placeholder="Dites-en plus..." maxlength="150"></textarea><div class="count"><span class="counter2">0</span>/150</div>
 			<button type="submit" value="Submit" class="btn-blue add-card">Envoyer</button>
 		</form>
 	</div>

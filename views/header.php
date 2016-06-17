@@ -11,5 +11,5 @@
 	</ul>
 
 	<!-- ADMIN BUTTON -->
-	<a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i></a>
+	<a href="inviter_copros.php?coprop_id=1"><i class="fa fa-user-plus" aria-hidden="true"></i></a>
 </header>
