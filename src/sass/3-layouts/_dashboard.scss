@@ -4,10 +4,13 @@
 	nav.nav-sort {
 		text-align: center;
 		padding-left: 50px;
+		@media screen and (max-width: 640px)  {
+		  padding-left: 0;
+		}
 		ul {
 			li {
 				display: inline-block;
-				padding: 0 15px;
+				padding: 10px 15px;
 				a {
 					color: $grey_silver_chalice;
 					font-size: 1.1rem;
@@ -34,6 +37,17 @@
 			width: 33.33%;
 			margin-bottom: 30px;
 			display: inline-block;
+			@media screen and (max-width: 1000px)  {
+			  width: 50%;
+			}
+			@media screen and (max-width: 840px)  {
+			  padding-left: 10%;
+			  width: 80%;
+			}
+			@media screen and (max-width: 640px)  {
+			  padding-left: 0;
+			  width: 100%;
+			}
 			> div {
 				position: relative;
 				flex: 1;
@@ -69,6 +83,9 @@
 							font-weight: 100;
 							font-size: 0.8rem;
 							color: $grey_silver_chalice;
+							@media screen and (max-width: 640px)  {
+							  display: none;
+							}
 						}
 						&.more {
 							bottom: 10px;
@@ -89,6 +106,9 @@
 						flex-direction: column;
 						padding: 45px 10px 26px;
 						width: 70%;
+						@media screen and (max-width: 640px)  {
+						  width: 100%;
+						}
 						// Title card
 						h4.content {
 							font-size: 0.9rem;
@@ -139,6 +159,9 @@
 						padding: 0 10px;
 						width: 30%;
 						text-align: center;
+						@media screen and (max-width: 640px)  {
+						  width: 50%;
+						}
 						> div {
 							width: auto;
 							margin: auto;
@@ -179,6 +202,9 @@
 							padding: 45px 10px 10px;
 							p {
 								display: block;
+								@media screen and (max-width: 640px)  {
+							  	margin-bottom: 20px;
+								}
 							}
 							a {
 								display: block;

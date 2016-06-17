@@ -16,15 +16,19 @@ body, html{
 .container {
 	width: 100%;
 	padding: 140px 30px 20px 130px;
+  @media screen and (max-width: 640px)  {
+    padding: 120px 0px 20px 100px;
+  }
 }
 
 .content-container {
-  padding: 40px 0;
-}
-
-input, textarea {
-  outline: none;
-  resize: none;
+  padding: 50px;
+  @media screen and (max-width: 640px)  {
+    padding: 50px 20px;
+  }
+  &.requests {
+    padding: 40px 0;
+  }
 }
 
 .contain-table {
@@ -38,6 +42,10 @@ input, textarea {
     display: table-cell;
     text-align: center;
   }
+}
+
+a {
+  display: block;
 }
 
 ::-webkit-scrollbar-track{

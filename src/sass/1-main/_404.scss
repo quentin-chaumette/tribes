@@ -1,7 +1,7 @@
 article#container-404{
 	width: 100vw;
 	height: 100vh;
-	background-color: $white_gold_light;	
+	background-color: $white_gold_light;
 	text-align: center;
 
 	div{
@@ -11,9 +11,9 @@ article#container-404{
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		font-family: 'LL';		
-		text-align: center;		
-		
+		font-family: 'LL';
+		text-align: center;
+
 		h1, h2{
 			width: 100%;
 		}
@@ -21,31 +21,31 @@ article#container-404{
 		h1{
 			width: 100%;
 			font-family: 'MS';
-			font-size: 300px;			
+			font-size: 300px;
 	    		color: rgba(200, 200, 200, 0.2);
 		}
 
-		h2{			
-			font-size: 16px;		
+		h2{
+			font-size: 16px;
 			position: absolute;
 			top: 160px;
 		}
 
 		span{
-			display: block;	
+			display: block;
 			margin-top: 20px;
 
 			a{
-				font-family: 'MSB';	
-				font-size: 15px;	
+				font-family: 'MSB';
+				font-size: 15px;
 				color: black;
 				text-transform: uppercase;
 				padding-bottom: 4px;
-				border-bottom: 1px solid black;	
+				border-bottom: 1px solid black;
 
 				&:hover{
 					color: #20B88A;
-					border-bottom: 1px solid #20B88A;	
+					border-bottom: 1px solid #20B88A;
 				}
 			}
 		}

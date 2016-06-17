@@ -7,20 +7,20 @@ $url = $_SERVER['REQUEST_URI'];
 <nav class="nav">
   <ul>
   <!-- <?php echo $url = "path/" ? 'active' : '' ?> Pour la class active -->
-    <li class="<?php echo $url = "tribes/views/dashboard.php" ? 'active' : '' ?>">
-      <a href="#">
+    <li>
+      <a href="dashboard.php" class="<?php echo $url = "tribes/views/dashboard.php" ? 'active' : '' ?>">
         <i class="fa fa-home" aria-hidden="true"></i>
         <p>Ma Copro</p>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="contact.php">
         <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
         <p>Le Syndic</p>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="settings.php">
         <i class="fa fa-cogs" aria-hidden="true"></i>
         <p>Paramètres</p>
       </a>

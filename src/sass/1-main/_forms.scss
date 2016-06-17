@@ -1,0 +1,18 @@
+input, textarea {
+  outline: none;
+  resize: none;
+}
+
+form {
+  text-align: center;
+  input, textarea {
+    font-family: $avenir;
+    color: $black_abbey;
+    font-weight: 500;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 7px;
+    border: 1px solid rgba($grey_silver_chalice, 0.4);
+    background-color: $white_alabaster;
+  }
+}

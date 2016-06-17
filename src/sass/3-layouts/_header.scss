@@ -16,6 +16,9 @@ header {
 			h2.title {
 				font-size: 1.5rem;
 				padding-bottom: 5px;
+				@media screen and (max-width: 640px)  {
+  			  display: none;
+  			}
 			}
 			p.content {
 				display: inline-block;
@@ -23,6 +26,9 @@ header {
 				font-size: 0.9rem;
   			color: $grey_iron;
   			letter-spacing: 0.1px;
+  			@media screen and (max-width: 640px)  {
+  			  display: none;
+  			}
 			}
 			i {
 				padding-right: 10px;
@@ -68,6 +74,52 @@ header {
 		background-color: $blue_havelock;
 		&:hover {
 			background-color: $blue_mariner;
+		}
+	}
+}
+.index {
+	.right-index {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		div {
+			&.btn-blue-index {
+				background-color: $blue_havelock;
+				border-bottom: 3px solid $blue_mariner;
+				margin: 0 10px;
+				border-radius: 7px;
+				display: inline-block;
+				@media screen and (max-width: 640px)  {
+				  margin: 0;
+				}
+				&:hover {
+				  background-color: $blue_mariner;
+				}
+				a {
+					padding: 10px 20px;
+					color: white;
+					font-weight: bold;
+				}
+			}
+			&.btn-red-index {
+				background-color: $red_carnation;
+				border-bottom: 3px solid $red_cinnabar;
+				margin: 0 10px;
+				border-radius: 7px;
+				display: inline-block;
+				@media screen and (max-width: 640px)  {
+				  margin: 0;
+				}
+				&:hover {
+				  background-color: $red_cinnabar;
+				}
+
+				a {
+					padding: 10px 20px;
+					color: white;
+					font-weight: bold;
+				}
+			}
 		}
 	}
 }

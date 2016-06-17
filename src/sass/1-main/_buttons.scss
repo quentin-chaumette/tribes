@@ -6,7 +6,6 @@ button {
   padding: 10px;
   border-radius: 7px;
   font-weight: bold;
-
   &.btn-blue {
     text-transform: uppercase;
     background-color: $blue_havelock;
@@ -14,6 +13,16 @@ button {
     margin: 0 10px;
     &:hover {
       background-color: $blue_mariner;
+    }
+  }
+
+  &.btn-red {
+    text-transform: uppercase;
+    background-color: $red_carnation;
+    border-bottom: 3px solid $red_cinnabar;
+    margin: 0 10px;
+    &:hover {
+      background-color: $red_cinnabar;
     }
   }
 }

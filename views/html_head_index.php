@@ -3,11 +3,12 @@
 <head>
 	<meta  charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!--[if IE]><link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" /><![endif]-->
 
-	<title>Title</title>
+	<title>Tribes - Échangez facilement entre copropriétaires</title>
 	<!--CSS-->
 	<link rel=stylesheet type=text/css href="assets/css/main.css">
 

@@ -1,7 +1,7 @@
 <?php
 	include 'html_head.php';
 	echo "<body>";
-	include 'header.php';
+	include 'header_connexion.php';
 ?>
 <!-- PAGE CONTENT -->
 
