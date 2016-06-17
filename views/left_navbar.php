@@ -14,13 +14,13 @@ $url = $_SERVER['REQUEST_URI'];
       </a>
     </li>
     <li>
-      <a href="contact.php">
+      <a href="#">
         <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
         <p>Le Syndic</p>
       </a>
     </li>
     <li>
-      <a href="settings.php">
+      <a href="#">
         <i class="fa fa-cogs" aria-hidden="true"></i>
         <p>Paramètres</p>
       </a>

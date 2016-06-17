@@ -38,13 +38,13 @@ var control = {
 					this_input.removeClass("valid");
 					this_input.addClass("invalid");
 					$('.msg-error-user-exist').html("Cet email existe déjà.");
-					$('input[type=submit]').prop('disabled', true);
+					$('button[type=submit]').prop('disabled', true);
 				}
 				else{
 					this_input.removeClass("invalid");
 					this_input.addClass("valid");
 					$('.msg-error-user-exist').html("");
-					$('input[type=submit]').prop('disabled', false);
+					$('button[type=submit]').prop('disabled', false);
 				}
 			});
 		})
@@ -134,6 +134,36 @@ var control = {
 		$('.text-content').on('keyup', function (e) {
 			self.counter2.apply(this, e)
 		})
+			function seeAll () {
+		$('.card').css('display', 'inline-block')
+		$('.nav-sort ul li.all a').addClass('active')
+		$('.nav-sort ul li:not(.all) a').removeClass('active')
+	}
+	function toTake () {
+		$('.toTake').css('display', 'inline-block')
+		$('.card:not(.toTake)').css('display', 'none')
+		$('.nav-sort ul li.toTake a').addClass('active')
+		$('.nav-sort ul li:not(.toTake) a').removeClass('active')
+	}
+	function todo () {
+		$('.toDo').css('display', 'inline-block')
+		$('.doing').css('display', 'inline-block')
+		$('.card:not(.toDo):not(.doing)').css('display', 'none')
+		$('.nav-sort ul li.todo a').addClass('active')
+		$('.nav-sort ul li:not(.todo) a').removeClass('active')
+	}
+	function done () {
+		$('.done').css('display', 'inline-block')
+		$('.card:not(.done)').css('display', 'none')
+		$('.nav-sort ul li:not(.done) a').removeClass('active')
+		$('.nav-sort ul li.done a').addClass('active')
+	}
+	function attribute () {
+		$('.attribute').css('display', 'inline-block')
+		$('.card:not(.attribute)').css('display', 'none')
+		$('.nav-sort ul li.attribute a').addClass('active')
+		$('.nav-sort ul li:not(.attribute) a').removeClass('active')
+	}
 	},
 
 	check_user_exist: function (user_mail, callback) {
@@ -178,7 +208,7 @@ var control = {
 				callback.call(this);
 			}
 		});
-	},	
+	},
 
 	expandCard: function (e) {
 		$(this).parents('.card')[0].classList.add('expanded');
