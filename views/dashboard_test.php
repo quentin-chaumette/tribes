@@ -51,7 +51,7 @@
 							echo "<div class='card toDo'>";
 						}
 						elseif($current_user_type=="admin"){
-							echo "<div class='card toDo'>";
+							echo "<div class='card doing'>";
 						}						
 						else{
 							echo "<div class='card doing'>";
