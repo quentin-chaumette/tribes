@@ -11,14 +11,23 @@
 				if ($current_user_id!=$in_charge['id']){
 					echo "<img class='user-img' src='http://lorempixel.com/200/200/cats' alt='' /><h5 class='title'>".$in_charge['firstname']." ".$in_charge['name']."</h5>";
 				}
-				else{
-					echo "<button type='submit' value='Submit' class='submit'>
+				elseif($current_user_type=="admin"){
+					echo "<button type='submit' value='Submit' class='submit req-update-status' data-new_state='done' data-req_id='".$request['id']."'>
 					<i class='fa fa-check' aria-hidden='true'></i>
 					</button>
-					<button type='submit' value='Submit' class='cancel'>
+					<button type='submit' value='Submit' class='cancel req-update-status-resp' data-new_state='todo' data-new_resp=0 data-req_id='".$request['id']."'>
 					<i class='fa fa-times' aria-hidden='true'></i>
 					</button>
-					<a href='mailto:mon_syndic@syndic.net'>Envoyer au Conseil Syndical</a>"; 
+					<a class='req-update-status' data-new_state='syndic' data-req_id='".$request['id']."' href='#envoyer_au_syndic'>Envoyer au Syndic</a>"; 
+				}				
+				else{
+					echo "<button type='submit' value='Submit' class='submit req-update-status' data-new_state='done' data-req_id='".$request['id']."'>
+					<i class='fa fa-check' aria-hidden='true'></i>
+					</button>
+					<button type='submit' value='Submit' class='cancel req-update-status-resp' data-new_state='todo' data-new_resp=0 data-req_id='".$request['id']."'>
+					<i class='fa fa-times' aria-hidden='true'></i>
+					</button>
+					<a class='submit req-update-status' data-new_state='todo_admin' data-req_id='".$request['id']."' href='#envoyer_au_syndicat'>Envoyer au Conseil Syndical</a>"; 
 				}
 			?>
 		</div>

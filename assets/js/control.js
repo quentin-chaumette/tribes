@@ -93,6 +93,20 @@ var control = {
 		})
 
 
+		// Dashboard : Update Cards
+		$('.req-update-status').on('click', function (e) {
+			self.update_card_status($(this).data("req_id"), $(this).data("new_state"),function(){
+				console.log("done");
+				// get le dashboard et re append le pour actualiser en async
+			});
+		})
+
+		$('.req-update-status-resp').on('click', function (e) {
+			self.update_card_status_and_responsible($(this).data("req_id"), $(this).data("new_state"), $(this).data("new_resp"),function(){
+				console.log("done");
+				// get le dashboard et re append le pour actualiser en async
+			});
+		})
 
 		// Expand card
 		$('.more').on('click', function (e) {
@@ -147,6 +161,22 @@ var control = {
 			}
 		});
 	},
+
+	update_card_status: function (req_id, new_state, callback) {
+		model.async('GET', '../modules/async_update_card_status.php?req_id='+req_id+'&new_state='+new_state, '', function(xhr){
+			if (xhr.response=="ok") {
+				callback.call(this);
+			}
+		});
+	},
+
+	update_card_status_and_responsible: function (req_id, new_state, new_resp, callback) {
+		model.async('GET', '../modules/async_update_card_status_resp.php?req_id='+req_id+'&new_state='+new_state+'&new_resp='+new_resp, '', function(xhr){
+			if (xhr.response=="ok") {
+				callback.call(this);
+			}
+		});
+	},	
 
 	expandCard: function (e) {
 		$(this).parents('.card')[0].classList.add('expanded');

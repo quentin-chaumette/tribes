@@ -47,7 +47,15 @@
 						echo "</div>";			
 					}					
 					elseif ($request['status']=="doing") {
-						echo "<div class='card doing'>";
+						if($current_user_id==$request['in_charge_id']){
+							echo "<div class='card toDo'>";
+						}
+						elseif($current_user_type=="admin"){
+							echo "<div class='card toDo'>";
+						}						
+						else{
+							echo "<div class='card doing'>";
+						}						
 						include 'cards/card_doing.php';
 						echo "</div>";
 					}

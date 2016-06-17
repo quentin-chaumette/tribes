@@ -10,13 +10,13 @@
 				if($current_user_type=='admin'){
 					echo "
 						<p class='item-subtitle'>Ne laissons pas le Syndic nous facturer 5 fois plus cher !</p>
-						<button type='submit' value='Submit' class='submit'>
+						<button type='submit' value='Submit' class='submit req-update-status' data-new_state='done' data-req_id='".$request['id']."'>
 							<i class='fa fa-check' aria-hidden='true'></i>
 						</button>
-						<button type='submit' value='Submit' class='cancel'>
+						<button type='submit' value='Submit' class='cancel req-update-status-resp' data-new_state='todo' data-new_resp=0 data-req_id='".$request['id']."'>
 							<i class='fa fa-times' aria-hidden='true'></i>
 						</button>
-						<a href='#go_to_syndic'>Envoyer au Syndic</a>
+						<a class='req-update-status' data-new_state='syndic' data-req_id='".$request['id']."' href='#envoyer_au_syndic'>Envoyer au Syndic</a>
 					";
 				}
 				elseif($current_user_type=='normal'){
