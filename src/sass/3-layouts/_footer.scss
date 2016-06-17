@@ -7,9 +7,21 @@ footer{
 
 	form {
 		padding: 20px 0;
+		input, textarea {
+		  font-family: $avenir;
+		  color: $black_abbey;
+		  font-weight: 500;
+		  padding: 10px;
+		  margin: 10px 0;
+		  border-radius: 7px;
+		  border: 1px solid rgba($grey_silver_chalice, 0.4);
+		  background-color: $white_alabaster;
+		}
 		input {
 			font-size: 1rem;
 			width: 250px;
+			margin: 0 auto;
+			display: inline-block;
 		}
 		button {
 			width: 50px;

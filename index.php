@@ -18,7 +18,7 @@
 
     <section id="copro" class="content-container">
       <h3 class="title">Votre copropriété</h3>
-      <p class="content content-container">Tribes est la solution qui permet a votre copropriété de perdurer en favorisant l’échange au travers d’un interface simple à prendre en main.</p>
+      <p class="content content-container">Tribes est la solution qui permet à votre copropriété de perdurer en favorisant l’échange au travers d’un interface simple à prendre en main.</p>
       <ul>
         <li><div class="wrap"><img src="assets/img/copro1.png" alt="Centralisation des documents"><p>Centralisation des documents et signature électronique</p></div></li>
         <li><div class="wrap"><img src="assets/img/copro2.png" alt="Entraide et échanges"><p>Entraide et échanges entre copropriétaires</p></div></li>
@@ -37,9 +37,9 @@
           <li><i class="fa fa-circle" aria-hidden="true"></i>Centralisation des documents de la copropriété </li>
           <li><i class="fa fa-circle" aria-hidden="true"></i>Système de signature électronique </li>
           <li><i class="fa fa-circle" aria-hidden="true"></i>Visualisation et prédiction des tendances de votes au tantième </li>
-          <li><i class="fa fa-circle" aria-hidden="true"></i>Tableau de bord des dépenses et balance des comptes. </li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i>Tableau de bord des dépenses et balance des comptes.</li>
           <li><i class="fa fa-circle" aria-hidden="true"></i>Suivi des dépenses par catégories </li>
-          <li><i class="fa fa-circle" aria-hidden="true"></i>Suggestions d’optimisation des dépenses et de réduction des charges énergétiques.</li>
+          <li><i class="fa fa-circle" aria-hidden="true"></i>Suggestions d’optimisation des dépenses et de réduction des charges énergétiques</li>
         </ul>
       </div>
     </section>

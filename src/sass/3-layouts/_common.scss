@@ -14,7 +14,8 @@ body, html{
 }
 
 .container {
-	width: 100%;
+  width: 100%;
+	height: 100vh;
 	padding: 140px 30px 20px 130px;
   @media screen and (max-width: 640px)  {
     padding: 120px 0px 20px 100px;
@@ -48,25 +49,15 @@ a {
   display: block;
 }
 
-::-webkit-scrollbar-track{
-	-webkit-box-shadow: none;
-	 background: none !important;
-	//background: rgba(100,100,100,0.9);
-}
-
-::-webkit-scrollbar{
-	width: 5px;
-	height: 5px;
-	background: none !important;
-}
-
-::-webkit-scrollbar-thumb{
-	border-radius: 10px;
-	background-color: rgba(10,10,10,0.3);
-}
-
 *{
 	transition: 150ms all ease;
+}
+
+// ERRORS MESSAGES
+.msg-error-match-passw, .msg-error-user-exist {
+  color: $red_cinnabar;
+  font-weight: bold;
+  padding-bottom: 20px;
 }
 
 // article.page_content{

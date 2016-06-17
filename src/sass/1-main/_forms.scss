@@ -5,14 +5,131 @@ input, textarea {
 
 form {
   text-align: center;
-  input, textarea {
-    font-family: $avenir;
-    color: $black_abbey;
-    font-weight: 500;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 7px;
-    border: 1px solid rgba($grey_silver_chalice, 0.4);
-    background-color: $white_alabaster;
+}
+
+.inscription_phase {
+  text-align: center;
+  background-color: $blue_mariner;
+  &.container {
+    padding-left: 30px;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+  }
+  form {
+    background-color: white;
+    width: 580px;
+    margin: 0 auto;
+    padding: 50px 70px;
+    /* CODEPEN
+       ========================================================================== */
+
+    .group {
+      position:relative;
+      margin-bottom:30px;
+    }
+    input         {
+      font-size: 1rem;
+      font-weight: 500;
+      padding:10px 10px 10px 5px;
+      display:block;
+      color: $black_abbey;
+      font-family: $avenir;
+      width:100%;
+      border:none;
+      background-color: white;
+      border-bottom:1px solid $black_abbey;
+    }
+    input:focus     { outline:none; }
+
+    button {
+      margin-bottom: 20px;
+    }
+
+    /* LABEL ======================================= */
+    label          {
+      color:#999;
+      font-size:1rem;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:10px;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+      span {
+        display: inline-block;
+        color: $red_cinnabar;
+      }
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label    {
+      top:-5px;
+      font-size:0.7rem;
+      color:$blue_havelock;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar  { position:relative; display:block; width:100%; }
+    .bar:before, .bar:after   {
+      content:'';
+      height:2px;
+      width:0;
+      bottom:1px;
+      position:absolute;
+      background:$blue_havelock;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+    .bar:before {
+      left:50%;
+    }
+    .bar:after {
+      right:50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+      width:50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+      position:absolute;
+      height:60%;
+      width:100px;
+      top:25%;
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+      from { background:#5264AE; }
+      to  { width:0; background:transparent; }
+    }
+    @-moz-keyframes inputHighlighter {
+      from { background:#5264AE; }
+      to  { width:0; background:transparent; }
+    }
+    @keyframes inputHighlighter {
+      from { background:#5264AE; }
+      to  { width:0; background:transparent; }
+    }
   }
 }
+
+
