@@ -24,22 +24,27 @@
 		<section class="requests content-container">
 			<?php
 				$coprop_id = 1;			// to dynamise cookie connexion
-				$current_user_type = 'normal';		// to dynamise cookie connexion
-				$current_user_id=2;
+				$current_user_type = 'admin';		// to dynamise cookie connexion
+				$current_user_id=1;
 				$requests_sql = get_requests($coprop_id);
 				while($request = mysqli_fetch_assoc($requests_sql)){
 					$author=get_user($request['author_id']);
 					$in_charge=get_user($request['in_charge_id']);
 
 					if($request['status']=="todo"){
-						/*echo "<div class='card toDo'>";
-						include 'cards/card_todo_everyone.php';
-						echo "</div>";*/
+						echo "<div class='card toTake'>";
+						include 'cards/card_todo_initial.php';
+						echo "</div>";
 					}
 					elseif($request['status']=="todo_admin"){
-						/*echo "<div class='card toDo'>";
-						include 'cards/card_toDoAdmin.php';
-						echo "</div>";*/			
+						if($current_user_type=='admin'){
+							echo "<div class='card toDo'>";
+						}
+						elseif($current_user_type=='normal'){
+							echo "<div class='card attribute'>";
+						}
+						include 'cards/card_todo_admin.php';
+						echo "</div>";			
 					}					
 					elseif ($request['status']=="doing") {
 						echo "<div class='card doing'>";
