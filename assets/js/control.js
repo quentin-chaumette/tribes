@@ -8,7 +8,6 @@ var control = {
 	init: function () {
 		this.$document = $(document);
 		this.event_listener_init();
-		console.log("hello");
 	},
 
 	/**
@@ -56,7 +55,6 @@ var control = {
 			var coprop_title=this.value;
 
 			self.check_coprop_exist(coprop_title, function(coprop_exist){
-				console.log("coprop_exist = ", coprop_exist);
 				if(coprop_exist){
 
 					this_input.removeClass("valid");
@@ -96,15 +94,19 @@ var control = {
 		// Dashboard : Update Cards
 		$('.req-update-status').on('click', function (e) {
 			self.update_card_status($(this).data("req_id"), $(this).data("new_state"),function(){
-				console.log("done");
-				// get le dashboard et re append le pour actualiser en async
+				model.async('GET', '../views/requests_content_reload.php', '', function(xhr){
+					$('section.requests').html(xhr.response);
+					control.init();
+				});
 			});
 		})
 
 		$('.req-update-status-resp').on('click', function (e) {
 			self.update_card_status_and_responsible($(this).data("req_id"), $(this).data("new_state"), $(this).data("new_resp"),function(){
-				console.log("done");
-				// get le dashboard et re append le pour actualiser en async
+				model.async('GET', '../views/requests_content_reload.php', '', function(xhr){
+					$('section.requests').html(xhr.response);
+					control.init();
+				});
 			});
 		})
 
