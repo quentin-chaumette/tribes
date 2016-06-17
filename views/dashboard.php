@@ -1,4 +1,13 @@
 <?php
+session_start();
+if(isset($_SESSION['current_user_id'])) {
+	$coprop_id = $_SESSION['coprop_id'];			// to dynamise cookie connexion
+	$current_user_type = $_SESSION['current_user_type'];		// to dynamise cookie connexion
+	$current_user_id=$_SESSION['current_user_id'];	
+}
+else{
+	header ("location: ../views/connexion.php");
+}
 	include 'html_head.php';
 	echo "<body>";
 	include 'header.php';
@@ -6,6 +15,7 @@
 	include '../modules/db_connect.php';
 	include '../modules/get_requests.php';
 	include '../modules/get_user.php';
+
 ?>
 <!-- PAGE CONTENT -->
 

@@ -1,7 +1,4 @@
 			<?php			
-				$coprop_id = 1;			// to dynamise cookie connexion
-				$current_user_type = 'admin';		// to dynamise cookie connexion
-				$current_user_id=1;
 				$requests_sql = get_requests($coprop_id);
 				while($request = mysqli_fetch_assoc($requests_sql)){
 					$author=get_user($request['author_id']);

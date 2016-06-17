@@ -25,7 +25,7 @@ $url = $_SERVER['REQUEST_URI'];
         <p>Paramètres</p>
       </a>
     </li>
-    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><p>Déconnexion</p></a></li>
+    <li><a href="../modules/deco.php"><i class="fa fa-sign-out" aria-hidden="true"></i><p>Déconnexion</p></a></li>
   </ul>
 
 </nav>

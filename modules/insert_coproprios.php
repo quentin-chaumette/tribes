@@ -26,7 +26,4 @@ if(isset($_POST['add_coproprios'])){
 	}
 	header("location: ../views/dashboard.php");
 }
-else{
-	header("location: ../views/dashboard.php");
-}
 ?>

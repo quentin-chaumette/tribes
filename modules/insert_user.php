@@ -16,8 +16,7 @@ if(isset($_POST['add_user'])){
 		$pass=$_POST['pass'];
 
 		if(check_user_exist($link, $mail)){
-			//echo "user already exist";
-			// if user exist give back error
+			header ("location: ../views/inscription.php");	
 		}		
 		else {
 			$insertion = mysqli_query($link, "INSERT INTO users (firstname,name,local,mail,pass, user_type) VALUES ('$firstname','$name','$local', '$mail', '$pass', 'admin') " );	

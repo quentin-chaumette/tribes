@@ -22,7 +22,7 @@ var control = {
 			mo.setAttribute('class', 'group')
 			$(mo).append(mi)
 			mi.setAttribute('type', 'text');
-			mi.setAttribute('name', 'mail');
+			mi.setAttribute('name', 'mail[]');
 			mi.setAttribute('class', 'mail');
 			mi.setAttribute('placeholder', 'exemple@gmail.com');
 			$(mi).css('width', '80%')
